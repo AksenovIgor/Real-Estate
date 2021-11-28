@@ -1,0 +1,122 @@
+.property{
+  &__map{
+    border-radius: 5px;
+  }
+  &__filter{
+    padding: 25px;
+    background: rgb(241, 241, 241);
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    position: relative;
+    &_item{
+      margin-bottom: 30px;
+      &_title{
+        margin-bottom: 9px;
+        font-weight: 700;
+      }
+      &_menu{
+        width: 100%;
+        height: 42px;
+        border-radius: 3px;
+        border: 2px solid #dedede;
+        padding: 0 15px;
+        font-weight: 500;
+      }
+    }
+    &_btn{
+      &::before{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #dedede;
+        position: absolute;
+        left: 0;
+        bottom: 100px;
+      }
+    }
+  }
+}
+
+
+
+.middle {
+	position: relative;
+	width: 100%;
+	margin-bottom: 80px;
+}
+
+.slider {
+	position: relative;
+	z-index: 1;
+	height: 8px;
+}
+.slider > .track {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #dedede;
+}
+.slider > .range {
+	position: absolute;
+	z-index: 2;
+	left: 25%;
+	right: 25%;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #ffa656;
+  padding: 0 auto;
+}
+.slider > .thumb {
+	position: absolute;
+	z-index: 3;
+	width: 20px;
+	height: 20px;
+	background-color: #ffffff;
+  border: 2px solid #dedede;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0 rgba(98,0,238,.1);
+	transition: box-shadow .3s ease-in-out;
+}
+.slider > .thumb.left {
+	left: 25%;
+	transform: translate(-10px, -6px);
+}
+.slider > .thumb.right {
+	right: 25%;
+	transform: translate(10px, -6px);
+}
+.slider > .thumb.hover {
+	box-shadow: 0 0 0 5px #00bd7542;
+}
+.slider > .thumb.active {
+	box-shadow: 0 0 0 7px #00bd7594;
+}
+.slider > .range-sale{
+  position: absolute;
+  margin-right: -6.5%;
+  margin-left: -6.5%;
+  font-family: 'Nunito Sans';
+}
+input[type=range] {
+	position: absolute;
+	pointer-events: none;
+	-webkit-appearance: none;
+	z-index: 2;
+	height: 10px;
+	width: 100%;
+	opacity: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+	pointer-events: all;
+	width: 30px;
+	height: 30px;
+	border-radius: 0;
+	border: 0 none;
+	background-color: rgb(250, 250, 250);
+	-webkit-appearance: none;
+}
