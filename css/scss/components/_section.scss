@@ -1,0 +1,66 @@
+.section{
+  &__property{
+    padding: 100px 0;
+    background-image: url(/img/main/property/bg.png);
+    background-position: center 50px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+  &__welcome{
+    position: relative;
+    height: 600px;
+    background-image: url(/img/main/welcome/bg_slide1.png);
+    background-size:cover;
+    background-position: center center;
+    &_slide{
+      background-image: url(/img/main/welcome/bg_slide2.png);
+      background-size:cover;
+      background-position: center center;
+    }
+    &_opacity{
+      background: rgba(0, 0, 0, 0.692);
+      background-size: cover;
+    }
+    &_map{
+      position: absolute;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      background: rgb(58, 57, 57);
+      background-image: url(/img/main/welcome/bg_slide3.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+      z-index: -1;
+      &_opacity{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.767);
+      }
+    }
+    &_img{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+      background-image: url(/img/main/welcome/bg_slide2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+  &__listing{
+    background: rgb(245, 244, 244);
+    padding: 100px 0;
+    border: 1px  solid rgb(226, 226, 226);
+  }
+  &__agencies{
+    padding: 100px 0;
+  }
+}

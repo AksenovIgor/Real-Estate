@@ -1,0 +1,26 @@
+.review{
+  &__slide{
+    background: rgba(0, 0, 0, 0.616);
+    padding: 150px 0 150px 0;
+    color: #fff;
+    &_quotes{
+      font-family: "Nunito Sans";
+      font-size: 141px;
+      line-height: 0.4;
+      margin-bottom: 17px;
+      color: #ffa656;
+    }
+    &_text{
+      margin-bottom: 40px;
+    }
+  }
+  &__swiper{
+
+    
+      background: rgb(58, 57, 57);
+      background-image: url(/img/main/welcome/bg_slide3.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 20px;
+  }
+}
