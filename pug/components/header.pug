@@ -16,6 +16,6 @@ header.header
                         a(href="") Register
                 div.collapse.navbar-collapse.justify-content-center(id="navbarTogglerDemo02")
                     ul.navbar-nav.d-flex.text-center 
-                        each value, index in {'Home' : 'home', 'properties' : 'properties', 'Agencies' : 'Agencies', 'about' : 'about', 'news' : 'news', 'contact us' : 'contact us'}
+                        each value, index in {'Home' : 'index', 'properties' : 'properties', 'Agencies' : 'Agencies', 'about' : 'about', 'news' : 'news', 'contact us' : 'contact us'}
                             li
-                                a.nav-link(href= "/html/" + value + ".html")= index
+                                a.nav-link(href= " ./" + value + ".html")= index
