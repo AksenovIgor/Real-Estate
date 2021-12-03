@@ -39,15 +39,16 @@ function setLeftValue() {
 		max = parseInt(_this.max);
 
 	_this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
-  console.log(this.value);
+  console.log( this.value);
   
 	var percent = ((_this.value - min) / (max - min)) * 100;
-
+  
 	thumbLeft.style.left = percent + "%";
 	range.style.left = percent + "%";
   rangeSaleLeft.style.left =  percent + "%";
   rangeSaleLeft.style.top = '20px';
   rangeSaleLeft.innerHTML = '$' + this.value;
+  
 }
 setLeftValue();
 
@@ -66,6 +67,7 @@ function setRightValue() {
   rangeSaleRight.innerHTML = '$' + this.value;
 	range.style.right = (100 - percent) + "%";
 }
+
 setRightValue();
 
 inputLeft.addEventListener("input", setLeftValue);
@@ -96,6 +98,7 @@ inputRight.addEventListener("mousedown", function() {
 inputRight.addEventListener("mouseup", function() {
 	thumbRight.classList.remove("active");
 });
+
 
 $(document).ready(function(){
   $('.card__img img').hover(function() {

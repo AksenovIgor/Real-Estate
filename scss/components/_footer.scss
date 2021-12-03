@@ -14,57 +14,77 @@
   }
   &__description {
     margin-bottom: 16px;
-    opacity: 60%;
+    color: #ffffff8e;
   }
   &__nav {
     &_title {
       margin-bottom: 18px;
+      font-size: 17px;
+      font-weight: 700;
     }
     &_list {
       line-height: 1;
     }
     &_item {
+      font-size: 14px;
       &:nth-child(-n+4){
         margin-bottom: 17px;
+        margin-bottom: 15px;
       }
       & a{
-        color: #fff;
-        opacity: 60%;
-        
+        color: #ffffff8e;
+        &:hover{
+          color: #fff;
+        }
       }
     }
   }
   &__contact {
     &_title {
       margin-bottom: 18px;
+      font-size: 17px;
+      font-weight: 700;
     }
     &_list {
       line-height: 1;
     }
     &_item {
-      opacity: 60%;
+      color: #ffffff8e;
+      font-size: 14px;
+      
       &:nth-child(-n+2){
-        margin-bottom: 17px;
+        margin-bottom: 15px;
       }
       & a{
-        color: #fff;
+        color: #ffffff8e;
+        &:hover{
+          color: #fff;
+        }
       }
     }
   }
   &__copyright {
     opacity: 40%;
-    padding: 8px 0 30px;
+    padding: 25px 0 30px;
     &_wrapper {
       background-color: #191919;
       
     }
   }
-}
-
-
-
-.footer__link_wrapper {
-}
-.footer__link_item {
+  &__link{
+    &_item{
+      &:hover svg path{
+        fill: rgba(255, 255, 255, 0.603);
+        transition: .3s;
+      }
+      &:nth-child(-n+5){
+        margin-right: 16px;
+      }
+      & svg path{
+        transition: .3s;
+        
+      }
+    }
+  }
 }
 
