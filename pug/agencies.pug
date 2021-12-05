@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  include ./components/head.pug
+  body
+    include ./components/header.pug
+    section.section.section__filter
+      .container
+        .filter
+          div.filter__wrapper.filter__wrapper_agencies
+            div.filter__item
+              p.filter__item_title City
+              select.filter__item_menu
+                option New York
+                option One
+                option Two
+                option Three
+            div.filter__item
+              p.filter__item_title Purpose
+              select.filter__item_menu
+                option Any Tipe
+                option One
+                option Two
+                option Three
+            div.filter__item
+              p.filter__item_title Keywords
+              select.filter__item_menu
+                option Any Purpose
+                option One
+                option Two
+                option Three
+          div.text-center
+              button.btn.btn-success(type="button") serch properties
+    section.section.section_blackout.section__agencies  
+      .container 
+        include ./components/section-agencies.pug
+    include ./components/section-contact.pug
+    include ./components/footer.pug
+  include ./components/link-js.pug

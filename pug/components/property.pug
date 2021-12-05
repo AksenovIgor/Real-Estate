@@ -7,54 +7,9 @@ section.section.section__property
       div.row
         div.col-8
           iframe.property__map(width="100%" height="100%"  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d48374.02699999242!2d-73.99174366084695!3d40.731736149295216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zcmVhbCBlc3RhdGUg0YDRj9C00L7QvCDRgSBOZXcgWW9yaywg0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1637939403822!5m2!1sru!2sru" frameborder="0" allowfullscreen="allowfullscreen" aria-hidden="false" tabindex="0")
-        div.property__filter.col-4
-          div.property__filter_item
-            p.property__filter_item_title City
-            select.property__filter_item_menu
-              option New York
-              option One
-              option Two
-              option Three
-          div.property__filter_item
-            p.property__filter_item_title Property Tipe
-            select.property__filter_item_menu
-              option Any Tipe
-              option One
-              option Two
-              option Three
-          div.property__filter_item
-            p.property__filter_item_title Purpose
-            select.property__filter_item_menu
-              option Any Purpose
-              option One
-              option Two
-              option Three
-          div.property__filter_item
-            p.property__filter_item_title Bethrooms
-            select.property__filter_item_menu
-              option 1+
-              option One
-              option Two
-              option Three
-          div.property__filter_item
-            p.property__filter_item_title Bathrooms
-            select.property__filter_item_menu
-              option 1+
-              option One
-              option Two
-              option Three
-          div.middle
-            p.property__filter_item_title Price
-            div.multi-range-slider
-              input(type="range" id="input-left" min="1" max="10000" value="530")
-              input(type="range" id="input-right" min="1" max="10000" value="4200")
-
-              div.slider
-                div.track
-                div.range
-                div.thumb.left
-                div.thumb.right
-                div.range-sale.left
-                div.range-sale.right
-          div.property__filter_btn
-            button.btn.btn-w100.btn-success(type="button") serch properties
+        div.col-4
+          div.filter
+            include ../components/filter.pug
+            include ../components/price-range.pug
+            div.filter__btn
+              button.btn.btn-w100.btn-success(type="button") serch properties

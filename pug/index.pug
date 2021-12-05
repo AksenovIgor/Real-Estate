@@ -1,32 +1,28 @@
 doctype html
 html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="preconnect" href="https://fonts.googleapis.com")
-    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-    link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap" rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet")
-    link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
-    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous")
-    link(rel="stylesheet", href=" ../main.css")
-    title Real Estate 
+  include ./components/head.pug
   body
     include ./components/header.pug
     include ./components/welcome.pug
     include ./components/property.pug
-    include ./components/new-listing.pug
-    include ./components/agencies.pug
+    section.section.section__listing
+      .container 
+        div.section__header.text-center
+          h2.section__header_title New Listing
+          .listing__btn.text-center
+            button.btn.btn-outline-success.listing__btn_rent(href="#rent") RENT
+            button.btn.btn-outline-success.listing__btn_buy BUY
+        include ./components/new-listing.pug
+    section.section.section__agencies
+      .container 
+        div.section__header.text-center
+          h2.section__header_title Search Property
+          p.section__header_description.col-6.offset-3 Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.
+        include ./components/section-agencies.pug
     include ./components/review.pug
     include ./components/latest-news.pug
-    include ./components/about.pug
-    include ./components/contact.pug
+    include ./components/section-about.pug
+    include ./components/section-contact.pug
     include ./components/footer.pug
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-  script(src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous")
-  script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous")
-  script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async></script>
-  script(src="/js/script.js")
+  //- link JavaScript
+  include ./components/link-js.pug

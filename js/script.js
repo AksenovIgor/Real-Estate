@@ -19,7 +19,13 @@ new Swiper('.swiper', {
   initialSlide: 0,
 });
 
-
+$(document).ready(function(){
+  $('.card__img img').hover(function() {
+    $(this).addClass('zoom');
+  }, function() {
+    $(this).removeClass('zoom');
+  });
+});
 const swiper = new Swiper('.swiper', {
   parallax: true,
 });
@@ -100,10 +106,3 @@ inputRight.addEventListener("mouseup", function() {
 });
 
 
-$(document).ready(function(){
-  $('.card__img img').hover(function() {
-    $(this).addClass('zoom');
-  }, function() {
-    $(this).removeClass('zoom');
-  });
-});

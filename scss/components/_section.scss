@@ -1,4 +1,7 @@
 .section{
+  &_blackout{
+    background: #f5f4f4;
+  }
   &__property{
     padding: 100px 0;
     background-image: url(/img/main/property/bg.png);
@@ -65,7 +68,7 @@
   }
   &__news{
     padding: 100px 0;
-    background: rgb(245, 244, 244);
+    background: #f5f4f4;
   }
   &__about{
     padding: 100px 0;
@@ -73,5 +76,8 @@
   &__contact{
     background: #00bd74;
     padding: 54px 0;
+  }
+  &__filter{
+    padding: 60px 0 50px;
   }
 }
