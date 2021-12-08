@@ -9,26 +9,7 @@
     grid-template-columns: repeat(3,1fr );
     column-gap: 30px;
     position: relative;
-    &::before{
-      content: 'Home/Properties grid';
-      position: absolute;
-      top: -70px;
-      left: -25px;
-      color: #b6b6b6;
-      font-weight: 400;
-      font-size: 18px;
-    }
-    &_agencies{
-      &::before{
-        content: 'Home/Agencies';
-        position: absolute;
-        top: -70px;
-        left: -25px;
-        color: #b6b6b6;
-        font-weight: 400;
-        font-size: 18px;
-      }
-    }
+    
   }
   &__item{
     margin-bottom: 30px;

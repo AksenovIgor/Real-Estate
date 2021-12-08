@@ -1,0 +1,34 @@
+.galery{
+  &__item{
+    &:hover .galery__img{
+      &::before{
+        content: ' ';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(49, 49, 49, 0.746);
+        border-radius: 8px;
+      }
+      &::after{
+        content: url(/img/about-us/main/galery/arrows-hover.png);
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        bottom: 45%;
+        right: 45%;
+      }
+    }
+  }
+  &__img{
+    position: relative;
+    & img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+    }
+  }
+}

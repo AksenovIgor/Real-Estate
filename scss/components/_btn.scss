@@ -1,4 +1,8 @@
 .btn{
+  &_active{
+    background-color: #00bd74;
+    color: #fff !important;
+  }
   width: auto;
   line-height: 0;
   border-radius: 3px;

@@ -1,0 +1,15 @@
+.skills{
+  &__level{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &_item{
+      &_title{
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

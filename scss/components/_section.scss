@@ -1,4 +1,5 @@
 .section{
+    
   &_blackout{
     background: #f5f4f4;
   }
@@ -10,52 +11,58 @@
     background-repeat: no-repeat;
   }
   &__welcome{
-    position: relative;
-    height: 600px;
-    background-image: url(/img/main/welcome/bg_slide1.png);
-    background-size:cover;
-    background-position: center center;
-    &_slide{
-      background-image: url(/img/main/welcome/bg_slide2.png);
+    height: 530px;
+    margin: 65px 0 0;
+    &_slider{
+      position: relative;
+      height: 600px;
+      background-image: url(/img/main/welcome/bg_slide1.png);
       background-size:cover;
       background-position: center center;
-    }
-    &_opacity{
-      background: rgba(0, 0, 0, 0.692);
-      background-size: cover;
-    }
-    &_map{
-      position: absolute;
-      top: 0;
-      right: 50%;
-      bottom: 0;
-      left: 0;
-      overflow: hidden;
-      background: rgb(58, 57, 57);
-      background-image: url(/img/main/welcome/bg_slide3.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: left;
-      z-index: -1;
+      &_slide{
+        background-image: url(/img/main/welcome/bg_slide2.png);
+        background-size:cover;
+        background-position: center center;
+      }
       &_opacity{
+        background: rgba(0, 0, 0, 0.692);
+        background-size: cover;
+      }
+      &_map{
+        position: absolute;
+        top: 0;
+        right: 50%;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        background: rgb(58, 57, 57);
+        background-image: url(/img/main/welcome/bg_slide3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        z-index: -1;
+        &_opacity{
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background: rgba(0, 0, 0, 0.767);
+        }
+        
+      }
+      &_img{
         position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.767);
+        left: 50%;
+        background-image: url(/img/main/welcome/bg_slide2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
       }
-    }
-    &_img{
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 50%;
-      background-image: url(/img/main/welcome/bg_slide2.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      z-index: -1;
+      
     }
   }
   &__listing{
@@ -80,4 +87,23 @@
   &__filter{
     padding: 60px 0 50px;
   }
+  &__features{
+    background-image: url(/img/about-us/main/features/bg_features.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #3a3939;
+    &_opacity{
+      background: #202020e3;
+    }
+  }
+  &__skills {
+    padding: 100px 0;
+    background: #f5f4f4;
+  }
+  &__galery{
+    margin: 100px 0;
+  }
 }
+
+

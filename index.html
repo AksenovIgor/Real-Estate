@@ -35,13 +35,14 @@
             </div>
           </div>
         </nav>
+        <div> </div>
       </div>
     </header>
     <div class="swiper welcome__swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <section class="section section__welcome">
-            <div class="section__welcome_opacity">
+          <section class="section section__welcome_slider">
+            <div class="section__welcome_slider_opacity">
               <div class="container">
                 <div class="row welcome">
                   <div class="col-6 my-auto">
@@ -86,8 +87,8 @@
           </section>
         </div>
         <div class="swiper-slide"> 
-          <section class="section section__welcome section__welcome_slide">
-            <div class="section__welcome_opacity">
+          <section class="section section__welcome_slider section__welcome_slider_slide">
+            <div class="section__welcome_slider_opacity">
               <div class="container">
                 <div class="row welcome">
                   <div class="my-auto">
@@ -109,10 +110,10 @@
         </div>
         <div class="swiper-slide"> 
           <section class="section">
-            <div class="section__welcome_map">
-              <div class="section__welcome_map_opacity"></div>
+            <div class="section__welcome_slider_map">
+              <div class="section__welcome_slider_map_opacity"></div>
             </div>
-            <div class="section__welcome_img"></div>
+            <div class="section__welcome_slider_img"></div>
             <div class="welcome container">
               <div class="my-auto">
                 <div class="welcome__content col-5">
@@ -235,7 +236,7 @@
         <div class="section__header text-center">
           <h2 class="section__header_title">New Listing</h2>
           <div class="listing__btn text-center">
-            <button class="btn btn-outline-success listing__btn_rent" href="#rent">RENT</button>
+            <button class="btn btn-outline-success listing__btn_rent btn_active" href="#rent">RENT</button>
             <button class="btn btn-outline-success listing__btn_buy">BUY</button>
           </div>
         </div>
@@ -483,34 +484,36 @@
         <div class="section__header text-center">
           <h2 class="section__header_title">Latest News</h2>
         </div>
-        <div class="news__card_list row">
-          <div class="news__card_item col">
-            <div class="card">
-              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
-              <div class="card__body">
-                <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
-                <p class="card__price">interiors / 12.04.2018</p>
-                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
+        <div class="news__card_list">
+          <div class="row row-cols-3">
+            <div class="news__card_item col">
+              <div class="card">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body">
+                  <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
+                  <p class="card__price">interiors / 12.04.2018</p>
+                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="news__card_item col">
-            <div class="card">
-              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
-              <div class="card__body">
-                <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
-                <p class="card__price">interiors / 12.04.2018</p>
-                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
+            <div class="news__card_item col">
+              <div class="card">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body">
+                  <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
+                  <p class="card__price">interiors / 12.04.2018</p>
+                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="news__card_item col">
-            <div class="card">
-              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
-              <div class="card__body">
-                <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
-                <p class="card__price">interiors / 12.04.2018</p>
-                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
+            <div class="news__card_item col">
+              <div class="card">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body">
+                  <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
+                  <p class="card__price">interiors / 12.04.2018</p>
+                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -524,7 +527,7 @@
       <div class="container"> 
         <div class="col-6 my-auto">
           <div class="section__header section__header_mb-none">
-            <h2 class="section__header_title">About us</h2>
+            <h2 class="section__header_title">About Us</h2>
             <p class="section__header_description">Nam a dui erat. Sed bibendum augue et porta consequat. Morbi id mattis sem. Phasellus quis magna ipsum. Donec malesuada nisi felis, vel vestibulum nisl volutpat faucibus. Suspendisse volutpat feugiat hendrerit. Donec ullamcorper ex sed gravida efficitur. Etiam tincidunt dui arcu, id varius dolor pulvinar vel.</p>
             <button class="btn btn-success" type="button">purchase theme</button>
           </div>

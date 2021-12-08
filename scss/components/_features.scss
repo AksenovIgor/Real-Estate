@@ -1,0 +1,26 @@
+.features{
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  &:nth-child(-n+3) .features__item{
+    margin-right: 70px;
+  }
+  &__item{
+    &_img{
+      width: 44px;
+      height: 44px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 30px;
+    }
+    &_title{
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    &_description{
+      font-size: 14px;
+    }
+  }
+}

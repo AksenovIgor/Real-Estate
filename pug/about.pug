@@ -1,10 +1,19 @@
 doctype html
 html(lang="en")
-  include ./components/head.pug
+  include ./components/head
   body
-    include ./components/header.pug
-    include ./components/review.pug
-    include ./components/latest-news.pug
-    include ./components/section-contact.pug
-    include ./components/footer.pug
-  include ./components/link-js.pug
+    include ./components/header
+      div.header__before.header__before_about
+    section.section.section__welcome  
+      .container
+        div.welcome__img
+          img(src="../img/about-us/main/about-photo.png", alt="")
+    include ./components/section-about
+    include ./components/features
+    include ./components/section-galery
+    include ./components/section-skills
+    include ./components/review
+    include ./components/latest-news
+    include ./components/section-contact
+    include ./components/footer
+  include ./components/link-js
