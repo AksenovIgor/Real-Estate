@@ -1,0 +1,12 @@
+div.agencies__card_item
+  div.card.h-100
+    div.card__img
+      img(src="../img/card/card_picture/card_img_one.png" class="card-img-top" alt="...")
+    div.card__body.text-center
+      h5.card__title Central Park, Manhattan, NY
+      p.card__description.mb-2 Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+    .d-flex.justify-content-center.align-items-end
+      if btnAgenciesSecondary
+        button.btn.btn-secondary.mb-3(type="button") view profile
+      else 
+        button.btn.btn-primary.mb-3(type="button") view profile

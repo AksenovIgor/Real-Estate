@@ -3,8 +3,14 @@ html(lang="en")
   include ./components/head
   body
     include ./components/header
-      div.header__before.header__before_about
-    section.section.section__welcome  
+    //-index-page
+    .container
+      nav.breadcrumb_wrapper(aria-label="breadcrumb")
+        ol.breadcrumb.mb-0.color-secondary
+          li.breadcrumb-item
+            a(href="./index.html") Home
+          li.breadcrumb-item.active(aria-current="page") About
+    section.section 
       .container
         div.welcome__img
           img(src="../img/about-us/main/about-photo.png", alt="")
@@ -13,7 +19,18 @@ html(lang="en")
     include ./components/section-galery
     include ./components/section-skills
     include ./components/review
-    include ./components/latest-news
+    //- section latest news
+    section.section.section__news 
+        .container
+          .section__header.text-center
+            h2.section__header_title Latest News
+          .news__card_list
+            .row.row-cols-1.row-cols-md-3.g-4
+                include ./components/card-news
+                include ./components/card-news
+                include ./components/card-news
+          .text-center
+            button.btn.btn-primary(type="button") view detail
     include ./components/section-contact
     include ./components/footer
   include ./components/link-js

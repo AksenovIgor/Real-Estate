@@ -5,11 +5,27 @@
   border-radius: 5px;
   position: relative;
   &__wrapper{
+    &_property{
+      display: grid;
+      grid-template-columns: repeat(1,1fr );
+      @media (max-width: 992px) {
+        grid-template-columns: repeat(2,1fr );
+        column-gap: 30px;
+      }
+      @media (max-width: 476px) {
+        grid-template-columns: repeat(1,1fr )
+      }
+    }
     display: grid;
     grid-template-columns: repeat(3,1fr );
     column-gap: 30px;
     position: relative;
-    
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2,1fr )
+    }
+    @media (max-width: 476px) {
+      grid-template-columns: repeat(1,1fr )
+    }
   }
   &__item{
     margin-bottom: 30px;
@@ -24,10 +40,14 @@
       border: 2px solid #dedede;
       padding: 0 15px;
       font-weight: 500;
+      &_message{
+        height: 100px;
+      }
     }
   }
   &__btn{
     margin-top: 80px;
+    
     &::before{
       content: '';
       width: 100%;

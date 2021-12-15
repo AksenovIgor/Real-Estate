@@ -41,6 +41,9 @@
         background-repeat: no-repeat;
         background-position: left;
         z-index: -1;
+        @media (max-width: 992px){
+          right: 0;
+        }
         &_opacity{
           position: absolute;
           top: 0;
@@ -61,6 +64,9 @@
         background-size: cover;
         background-repeat: no-repeat;
         z-index: -1;
+        @media (max-width: 992px){
+          left: 100%;
+        }
       }
       
     }
@@ -85,7 +91,7 @@
     padding: 54px 0;
   }
   &__filter{
-    padding: 60px 0 50px;
+    padding: 0 0 50px;
   }
   &__features{
     background-image: url(/img/about-us/main/features/bg_features.png);

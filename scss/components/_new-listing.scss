@@ -1,21 +1,15 @@
 .listing{
-  
   &__btn{
     text-align: center;
     max-width: 165px;
     margin: 0 auto;
     display: flex;
-    & .btn-outline-success{
-      color: #000;
-      border-color: #00bd74;
-      &:focus{
-        background: #00bd74;
-        border-color: #00bd74;
-        color: #ffffff;
-      }
+    
+    & .active{
+      color: #fff;
+    }
+    & .btn-outline-primary{
       &:hover{
-        background: #00955c;
-        border-color: #00955c;
         color: #ffffff;
       }
     }
@@ -28,10 +22,12 @@
     &_rent{
       width: 50%;
       border-radius: 3px 0 0 3px;
+      color: #000;
     } 
     &_buy{
       width: 50%;
       border-radius: 0 3px 3px 0;
+      color: #000;
     }
   }
   &__card{
@@ -40,6 +36,12 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
       margin-bottom: 70px;
+      @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 476px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 }

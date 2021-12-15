@@ -1,4 +1,31 @@
 .news{
+  &__navigation{
+    margin-bottom: px;
+    
+    &_item{
+      border: 1px solid #00bd7500;
+      background: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 700;
+      color: #6b6b6b;
+      padding: 11px;
+      line-height: 1;
+      &:hover{
+        color: #008b56;
+        border: 1px solid #008b56;
+        border-radius: 3px;
+      }
+      &:nth-child(-n+3){
+        margin-right: 30px;
+      }
+      &_active{
+        color: #00bd74;
+        border: 1px solid #00bd74;
+        border-radius: 3px;
+      }
+    }
+  }
   &__card{
     &_list{
       padding-bottom: 70px;

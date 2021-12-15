@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href=" ../main.css">
     <title>Real Estate </title>
   </head>
   <body>
-    <header class="header"> 
+    <header class="header fixed-top">
       <div class="container"> 
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid p-0"><a class="navbar-brand" href="#"><img src="../img/header/logo.png" alt=""></a>
@@ -38,32 +38,30 @@
         <div> </div>
       </div>
     </header>
-    <div class="swiper welcome__swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <section class="section section__welcome_slider">
-            <div class="section__welcome_slider_opacity">
-              <div class="container">
-                <div class="row welcome">
-                  <div class="col-6 my-auto">
-                    <div class="welcome__content">
-                      <div class="welcome__content_sale">
-                        <label for="sale"> sale</label>
-                      </div>
-                      <h1 class="welcome__content_title">372 Central Park W #17N, New York</h1>
-                      <p class="welcome__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec arcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                      <div>
-                        <button class="btn btn-success" type="button">view detail</button>
+    <main>
+      <div class="welcome__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <section class="section section__welcome_slider">
+              <div class="section__welcome_slider_opacity">
+                <div class="container">
+                  <div class="row welcome">
+                    <div class="col-lg-6 my-auto text-center text-lg-start">
+                      <div class="welcome__content">
+                        <label class="welcome__content_sale mx-auto mx-lg-0" for="sale"> sale</label>
+                        <h1 class="welcome__content_title">372 Central Park W #17N, New York</h1>
+                        <p class="welcome__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec arcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                        <div>
+                          <button class="btn btn-primary" type="button">view detail</button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-4 offset-2">
-                    <div class="welcome__card">
+                    <div class="col-4 offset-2 d-none d-lg-block">
                       <div class="card">
                         <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
                         <div class="card__body">
                           <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                          <p class="card__price">$5,630,000</p>
+                          <p class="card__price text-primary">$5,630,000</p>
                           <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
                         </div>
                         <div class="card-footer">
@@ -83,171 +81,267 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
-        </div>
-        <div class="swiper-slide"> 
-          <section class="section section__welcome_slider section__welcome_slider_slide">
-            <div class="section__welcome_slider_opacity">
-              <div class="container">
-                <div class="row welcome">
-                  <div class="my-auto">
-                    <div class="welcome__content welcome__content_slide text-center">
-                      <div class="welcome__content_sale mx-auto">
-                        <p>sale</p>
-                      </div>
-                      <h2 class="welcome__content_title">372 Central Park W #17N, New York</h2>
-                      <p class="welcome__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec arcu eget nulla bibendum finibus aptent taciti sociosqu.</p>
-                      <div>
-                        <button class="btn btn-success" type="button">view detail </button>
+            </section>
+          </div>
+          <div class="swiper-slide"> 
+            <section class="section section__welcome_slider section__welcome_slider_slide">
+              <div class="section__welcome_slider_opacity">
+                <div class="container">
+                  <div class="row welcome">
+                    <div class="my-auto">
+                      <div class="welcome__content col col-lg-6 offset-lg-3 text-center">
+                        <label class="welcome__content_sale mx-auto" for="sale"> sale</label>
+                        <h2 class="welcome__content_title">372 Central Park W #17N, New York</h2>
+                        <p class="welcome__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec arcu eget nulla bibendum finibus aptent taciti sociosqu.</p>
+                        <div>
+                          <button class="btn btn-primary" type="button">view detail </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
-        </div>
-        <div class="swiper-slide"> 
-          <section class="section">
-            <div class="section__welcome_slider_map">
-              <div class="section__welcome_slider_map_opacity"></div>
-            </div>
-            <div class="section__welcome_slider_img"></div>
-            <div class="welcome container">
-              <div class="my-auto">
-                <div class="welcome__content col-5">
-                  <div class="welcome__content_sale">
-                    <p>sale</p>
-                  </div>
-                  <h2 class="welcome__content_title">372 Central Park W #17N, New York</h2>
-                  <p class="welcome__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec arcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                  <div>
-                    <button class="btn btn-success" type="button">view detail</button>
-                  </div>
-                </div>
+            </section>
+          </div>
+          <div class="swiper-slide"> 
+            <section class="section">
+              <div class="section__welcome_slider_map">
+                <div class="section__welcome_slider_map_opacity"></div>
               </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev">
-        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
-          <defs>
-            <style></style>
-          </defs>
-          <path class="cls-1" id="_2_hover_100_" fill="#fff" data-name="2 hover 100%" d="M7.621,15.261a0.821,0.821,0,0,0,1.158-.034A0.8,0.8,0,0,0,8.746,14.1L2.707,8.495l19.372-.56a0.8,0.8,0,0,0,.787-0.822,0.809,0.809,0,0,0-.834-0.785L2.66,6.888l5.7-5.934A0.808,0.808,0,0,0,8.329-.185a0.821,0.821,0,0,0-1.158.033L0.119,7.2A0.776,0.776,0,0,0,.152,8.328Z"></path>
-        </svg>
-      </div>
-      <div class="swiper-button-next">
-        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
-          <defs>
-            <style></style>
-          </defs>
-          <path class="cls-1" id="_2_hover_100_" fill="#fff" data-name="2 hover 100%" d="M15.5,0.24a0.82,0.82,0,0,0-1.16,0,0.8,0.8,0,0,0,0,1.134l5.882,5.81H0.812a0.8,0.8,0,0,0-.812.8A0.812,0.812,0,0,0,.812,8.8H20.221l-5.882,5.8a0.815,0.815,0,1,0,1.16,1.146L22.774,8.56a0.782,0.782,0,0,0,0-1.134Z"></path>
-        </svg>
-      </div>
-    </div>
-    <section class="section section__property">
-      <div class="container">  
-        <div class="section__header text-center">
-          <h2 class="section__header_title">Search Property</h2>
-          <p class="section__header_description col-6 offset-3">Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.</p>
-        </div>
-        <div class="property">
-          <div class="row">
-            <div class="col-8">
-              <iframe class="property__map" width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d48374.02699999242!2d-73.99174366084695!3d40.731736149295216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zcmVhbCBlc3RhdGUg0YDRj9C00L7QvCDRgSBOZXcgWW9yaywg0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1637939403822!5m2!1sru!2sru" frameborder="0" allowfullscreen="allowfullscreen" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-            <div class="col-4">
-              <div class="filter">
-                <div class="filter__item">
-                  <p class="filter__item_title">City</p>
-                  <select class="filter__item_menu">
-                    <option>New York</option>
-                    <option>One</option>
-                    <option>Two</option>
-                    <option>Three</option>
-                  </select>
-                </div>
-                <div class="filter__item">
-                  <p class="filter__item_title">Property Tipe</p>
-                  <select class="filter__item_menu">
-                    <option>Any Tipe</option>
-                    <option>One</option>
-                    <option>Two</option>
-                    <option>Three</option>
-                  </select>
-                </div>
-                <div class="filter__item">
-                  <p class="filter__item_title">Purpose</p>
-                  <select class="filter__item_menu">
-                    <option>Any Purpose</option>
-                    <option>One</option>
-                    <option>Two</option>
-                    <option>Three</option>
-                  </select>
-                </div>
-                <div class="filter__item">
-                  <p class="filter__item_title">Bethrooms</p>
-                  <select class="filter__item_menu">
-                    <option>1+</option>
-                    <option>One</option>
-                    <option>Two</option>
-                    <option>Three</option>
-                  </select>
-                </div>
-                <div class="filter__item">
-                  <p class="filter__item_title">Bathrooms</p>
-                  <select class="filter__item_menu">
-                    <option>1+</option>
-                    <option>One</option>
-                    <option>Two</option>
-                    <option>Three</option>
-                  </select>
-                </div>
-                <div class="middle">
-                  <p class="filter__item_title">Price</p>
-                  <div class="multi-range-slider">
-                    <input type="range" id="input-left" min="1" max="10000" value="530">
-                    <input type="range" id="input-right" min="1" max="10000" value="4200">
-                    <div class="slider">
-                      <div class="track"></div>
-                      <div class="range"></div>
-                      <div class="thumb left"></div>
-                      <div class="thumb right"></div>
-                      <div class="range-sale left"></div>
-                      <div class="range-sale right"></div>
+              <div class="section__welcome_slider_img"></div>
+              <div class="welcome container">
+                <div class="my-auto">
+                  <div class="welcome__content col-lg-5 text-center text-lg-start">
+                    <label class="welcome__content_sale mx-auto mx-lg-0" for="sale"> sale</label>
+                    <h2 class="welcome__content_title">372 Central Park W #17N, New York</h2>
+                    <p class="welcome__content_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec arcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <div>
+                      <button class="btn btn-primary" type="button">view detail</button>
                     </div>
                   </div>
                 </div>
-                <div class="filter__btn">
-                  <button class="btn btn-w100 btn-success" type="button">serch properties</button>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
+            <defs>
+              <style></style>
+            </defs>
+            <path class="cls-1" id="_2_hover_100_" fill="#fff" data-name="2 hover 100%" d="M7.621,15.261a0.821,0.821,0,0,0,1.158-.034A0.8,0.8,0,0,0,8.746,14.1L2.707,8.495l19.372-.56a0.8,0.8,0,0,0,.787-0.822,0.809,0.809,0,0,0-.834-0.785L2.66,6.888l5.7-5.934A0.808,0.808,0,0,0,8.329-.185a0.821,0.821,0,0,0-1.158.033L0.119,7.2A0.776,0.776,0,0,0,.152,8.328Z"></path>
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
+            <defs>
+              <style></style>
+            </defs>
+            <path class="cls-1" id="_2_hover_100_" fill="#fff" data-name="2 hover 100%" d="M15.5,0.24a0.82,0.82,0,0,0-1.16,0,0.8,0.8,0,0,0,0,1.134l5.882,5.81H0.812a0.8,0.8,0,0,0-.812.8A0.812,0.812,0,0,0,.812,8.8H20.221l-5.882,5.8a0.815,0.815,0,1,0,1.16,1.146L22.774,8.56a0.782,0.782,0,0,0,0-1.134Z"></path>
+          </svg>
+        </div>
+      </div>
+      <section class="section section__property">
+        <div class="container">  
+          <div class="section__header text-center">
+            <h2 class="section__header_title">Search Property</h2>
+            <p class="section__header_description col-md-6 offset-md-3">Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.</p>
+          </div>
+          <div class="property">
+            <div class="row row-lg-2">
+              <div class="col-lg-8">
+                <iframe class="map__item" width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d48374.02699999242!2d-73.99174366084695!3d40.731736149295216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zcmVhbCBlc3RhdGUg0YDRj9C00L7QvCDRgSBOZXcgWW9yaywg0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1637939403822!5m2!1sru!2sru" frameborder="0" allowfullscreen="allowfullscreen" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+              <div class="col-lg-4">
+                <div class="filter">
+                  <div class="filter__wrapper_property">
+                    <div class="filter__item">
+                      <p class="filter__item_title">City</p>
+                      <select class="filter__item_menu">
+                        <option>New York</option>
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
+                      </select>
+                    </div>
+                    <div class="filter__item">
+                      <p class="filter__item_title">City</p>
+                      <select class="filter__item_menu">
+                        <option>New York</option>
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
+                      </select>
+                    </div>
+                    <div class="filter__item">
+                      <p class="filter__item_title">City</p>
+                      <select class="filter__item_menu">
+                        <option>New York</option>
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
+                      </select>
+                    </div>
+                    <div class="filter__item">
+                      <p class="filter__item_title">City</p>
+                      <select class="filter__item_menu">
+                        <option>New York</option>
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
+                      </select>
+                    </div>
+                    <div class="filter__item">
+                      <p class="filter__item_title">City</p>
+                      <select class="filter__item_menu">
+                        <option>New York</option>
+                        <option>One</option>
+                        <option>Two</option>
+                        <option>Three</option>
+                      </select>
+                    </div>
+                    <div class="middle">
+                      <p class="filter__item_title">Price</p>
+                      <div class="multi-range-slider">
+                        <input type="range" id="input-left" min="1" max="10000" value="530">
+                        <input type="range" id="input-right" min="1" max="10000" value="4200">
+                        <div class="slider">
+                          <div class="track"></div>
+                          <div class="range"></div>
+                          <div class="thumb left"></div>
+                          <div class="thumb right"></div>
+                          <div class="range-sale left"></div>
+                          <div class="range-sale right"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter__btn">
+                      <button class="btn w-100 btn-primary" type="button">serch properties</button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section section__listing">
-      <div class="container"> 
-        <div class="section__header text-center">
-          <h2 class="section__header_title">New Listing</h2>
-          <div class="listing__btn text-center">
-            <button class="btn btn-outline-success listing__btn_rent btn_active" href="#rent">RENT</button>
-            <button class="btn btn-outline-success listing__btn_buy">BUY</button>
-          </div>
-        </div>
+      </section>
+      <section class="section section__listing">
         <div class="container"> 
-          <div class="listing__card_list" id="rent">
-            <div class="listing__card_item">
+          <div class="section__header text-center">
+            <h2 class="section__header_title">New Listing</h2>
+            <div class="listing__btn text-center">
+              <button class="btn btn-outline-primary listing__btn_rent active" href="#rent">RENT</button>
+              <button class="btn btn-outline-primary listing__btn_buy">BUY</button>
+            </div>
+          </div>
+          <div> 
+            <div class="listing__card_list" id="rent">
               <div class="card">
                 <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
                 <div class="card__body">
                   <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                  <p class="card__price">$5,630,000</p>
+                  <p class="card__price text-primary">$5,630,000</p>
+                  <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                </div>
+                <div class="card-footer">
+                  <div> <a class="card__link" href=""> 
+                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <defs>
+                          <style></style>
+                        </defs>
+                        <path class="cls-1" id="icon" d="M17.5,8.812V1.875A1.875,1.875,0,0,0,15.625,0H4.375A1.875,1.875,0,0,0,2.5,1.875V8.812A3.131,3.131,0,0,0,0,11.875V20H1.25V17.5h17.5V20H20V11.875A3.131,3.131,0,0,0,17.5,8.812ZM3.75,1.875A0.625,0.625,0,0,1,4.375,1.25h11.25a0.625,0.625,0,0,1,.625.625V8.75h-2.5V6.875A1.875,1.875,0,0,0,11.875,5H8.125A1.875,1.875,0,0,0,6.25,6.875V8.75H3.75V1.875Zm8.75,5V8.75h-5V6.875A0.625,0.625,0,0,1,8.125,6.25h3.75A0.625,0.625,0,0,1,12.5,6.875Zm6.25,9.375H1.25V15h17.5v1.25Zm0-2.5H1.25V11.875A1.875,1.875,0,0,1,3.125,10h13.75a1.875,1.875,0,0,1,1.875,1.875V13.75ZM5,2.5H6.25V3.75H5V2.5Zm2.5,0H8.75V3.75H7.5V2.5Zm3.75,0H12.5V3.75H11.25V2.5Zm2.5,0H15V3.75H13.75V2.5Z"></path>
+                      </svg><span>2bd</span></a><a class="card__link" href=""> 
+                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                        <path class="cls-1" id="icon" fill="#000" d="M16.714,10V8.6L14.54,4.375H12.214V3.125A3.175,3.175,0,0,0,9,0H3.214A3.175,3.175,0,0,0,0,3.125V20H1.286V3.125A1.9,1.9,0,0,1,3.214,1.25H9a1.9,1.9,0,0,1,1.929,1.875v1.25H8.6L6.429,8.6V10H5.143v1.25H18V10H16.714Zm-1.286,0H7.714V8.9L9.4,5.625h4.348L15.429,8.9V10ZM7.714,12.5H9v1.25H7.714V12.5Zm0,2.5H9v2.5H7.714V15Zm0,3.75H9V20H7.714V18.75Zm3.214-6.25h1.286v5H10.929v-5Zm0,6.25h1.286V20H10.929V18.75Zm3.214-6.25h1.286v1.25H14.143V12.5Zm0,2.5h1.286v1.25H14.143V15Zm0,2.5h1.286V20H14.143V17.5Z"></path>
+                      </svg><span>1ba</span></a><a class="card__link" href=""> <span class="card__link_icon">756</span><span>sqft</span></a></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body">
+                  <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                  <p class="card__price text-primary">$5,630,000</p>
+                  <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                </div>
+                <div class="card-footer">
+                  <div> <a class="card__link" href=""> 
+                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <defs>
+                          <style></style>
+                        </defs>
+                        <path class="cls-1" id="icon" d="M17.5,8.812V1.875A1.875,1.875,0,0,0,15.625,0H4.375A1.875,1.875,0,0,0,2.5,1.875V8.812A3.131,3.131,0,0,0,0,11.875V20H1.25V17.5h17.5V20H20V11.875A3.131,3.131,0,0,0,17.5,8.812ZM3.75,1.875A0.625,0.625,0,0,1,4.375,1.25h11.25a0.625,0.625,0,0,1,.625.625V8.75h-2.5V6.875A1.875,1.875,0,0,0,11.875,5H8.125A1.875,1.875,0,0,0,6.25,6.875V8.75H3.75V1.875Zm8.75,5V8.75h-5V6.875A0.625,0.625,0,0,1,8.125,6.25h3.75A0.625,0.625,0,0,1,12.5,6.875Zm6.25,9.375H1.25V15h17.5v1.25Zm0-2.5H1.25V11.875A1.875,1.875,0,0,1,3.125,10h13.75a1.875,1.875,0,0,1,1.875,1.875V13.75ZM5,2.5H6.25V3.75H5V2.5Zm2.5,0H8.75V3.75H7.5V2.5Zm3.75,0H12.5V3.75H11.25V2.5Zm2.5,0H15V3.75H13.75V2.5Z"></path>
+                      </svg><span>2bd</span></a><a class="card__link" href=""> 
+                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                        <path class="cls-1" id="icon" fill="#000" d="M16.714,10V8.6L14.54,4.375H12.214V3.125A3.175,3.175,0,0,0,9,0H3.214A3.175,3.175,0,0,0,0,3.125V20H1.286V3.125A1.9,1.9,0,0,1,3.214,1.25H9a1.9,1.9,0,0,1,1.929,1.875v1.25H8.6L6.429,8.6V10H5.143v1.25H18V10H16.714Zm-1.286,0H7.714V8.9L9.4,5.625h4.348L15.429,8.9V10ZM7.714,12.5H9v1.25H7.714V12.5Zm0,2.5H9v2.5H7.714V15Zm0,3.75H9V20H7.714V18.75Zm3.214-6.25h1.286v5H10.929v-5Zm0,6.25h1.286V20H10.929V18.75Zm3.214-6.25h1.286v1.25H14.143V12.5Zm0,2.5h1.286v1.25H14.143V15Zm0,2.5h1.286V20H14.143V17.5Z"></path>
+                      </svg><span>1ba</span></a><a class="card__link" href=""> <span class="card__link_icon">756</span><span>sqft</span></a></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body">
+                  <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                  <p class="card__price text-primary">$5,630,000</p>
+                  <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                </div>
+                <div class="card-footer">
+                  <div> <a class="card__link" href=""> 
+                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <defs>
+                          <style></style>
+                        </defs>
+                        <path class="cls-1" id="icon" d="M17.5,8.812V1.875A1.875,1.875,0,0,0,15.625,0H4.375A1.875,1.875,0,0,0,2.5,1.875V8.812A3.131,3.131,0,0,0,0,11.875V20H1.25V17.5h17.5V20H20V11.875A3.131,3.131,0,0,0,17.5,8.812ZM3.75,1.875A0.625,0.625,0,0,1,4.375,1.25h11.25a0.625,0.625,0,0,1,.625.625V8.75h-2.5V6.875A1.875,1.875,0,0,0,11.875,5H8.125A1.875,1.875,0,0,0,6.25,6.875V8.75H3.75V1.875Zm8.75,5V8.75h-5V6.875A0.625,0.625,0,0,1,8.125,6.25h3.75A0.625,0.625,0,0,1,12.5,6.875Zm6.25,9.375H1.25V15h17.5v1.25Zm0-2.5H1.25V11.875A1.875,1.875,0,0,1,3.125,10h13.75a1.875,1.875,0,0,1,1.875,1.875V13.75ZM5,2.5H6.25V3.75H5V2.5Zm2.5,0H8.75V3.75H7.5V2.5Zm3.75,0H12.5V3.75H11.25V2.5Zm2.5,0H15V3.75H13.75V2.5Z"></path>
+                      </svg><span>2bd</span></a><a class="card__link" href=""> 
+                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                        <path class="cls-1" id="icon" fill="#000" d="M16.714,10V8.6L14.54,4.375H12.214V3.125A3.175,3.175,0,0,0,9,0H3.214A3.175,3.175,0,0,0,0,3.125V20H1.286V3.125A1.9,1.9,0,0,1,3.214,1.25H9a1.9,1.9,0,0,1,1.929,1.875v1.25H8.6L6.429,8.6V10H5.143v1.25H18V10H16.714Zm-1.286,0H7.714V8.9L9.4,5.625h4.348L15.429,8.9V10ZM7.714,12.5H9v1.25H7.714V12.5Zm0,2.5H9v2.5H7.714V15Zm0,3.75H9V20H7.714V18.75Zm3.214-6.25h1.286v5H10.929v-5Zm0,6.25h1.286V20H10.929V18.75Zm3.214-6.25h1.286v1.25H14.143V12.5Zm0,2.5h1.286v1.25H14.143V15Zm0,2.5h1.286V20H14.143V17.5Z"></path>
+                      </svg><span>1ba</span></a><a class="card__link" href=""> <span class="card__link_icon">756</span><span>sqft</span></a></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body">
+                  <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                  <p class="card__price text-primary">$5,630,000</p>
+                  <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                </div>
+                <div class="card-footer">
+                  <div> <a class="card__link" href=""> 
+                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <defs>
+                          <style></style>
+                        </defs>
+                        <path class="cls-1" id="icon" d="M17.5,8.812V1.875A1.875,1.875,0,0,0,15.625,0H4.375A1.875,1.875,0,0,0,2.5,1.875V8.812A3.131,3.131,0,0,0,0,11.875V20H1.25V17.5h17.5V20H20V11.875A3.131,3.131,0,0,0,17.5,8.812ZM3.75,1.875A0.625,0.625,0,0,1,4.375,1.25h11.25a0.625,0.625,0,0,1,.625.625V8.75h-2.5V6.875A1.875,1.875,0,0,0,11.875,5H8.125A1.875,1.875,0,0,0,6.25,6.875V8.75H3.75V1.875Zm8.75,5V8.75h-5V6.875A0.625,0.625,0,0,1,8.125,6.25h3.75A0.625,0.625,0,0,1,12.5,6.875Zm6.25,9.375H1.25V15h17.5v1.25Zm0-2.5H1.25V11.875A1.875,1.875,0,0,1,3.125,10h13.75a1.875,1.875,0,0,1,1.875,1.875V13.75ZM5,2.5H6.25V3.75H5V2.5Zm2.5,0H8.75V3.75H7.5V2.5Zm3.75,0H12.5V3.75H11.25V2.5Zm2.5,0H15V3.75H13.75V2.5Z"></path>
+                      </svg><span>2bd</span></a><a class="card__link" href=""> 
+                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                        <path class="cls-1" id="icon" fill="#000" d="M16.714,10V8.6L14.54,4.375H12.214V3.125A3.175,3.175,0,0,0,9,0H3.214A3.175,3.175,0,0,0,0,3.125V20H1.286V3.125A1.9,1.9,0,0,1,3.214,1.25H9a1.9,1.9,0,0,1,1.929,1.875v1.25H8.6L6.429,8.6V10H5.143v1.25H18V10H16.714Zm-1.286,0H7.714V8.9L9.4,5.625h4.348L15.429,8.9V10ZM7.714,12.5H9v1.25H7.714V12.5Zm0,2.5H9v2.5H7.714V15Zm0,3.75H9V20H7.714V18.75Zm3.214-6.25h1.286v5H10.929v-5Zm0,6.25h1.286V20H10.929V18.75Zm3.214-6.25h1.286v1.25H14.143V12.5Zm0,2.5h1.286v1.25H14.143V15Zm0,2.5h1.286V20H14.143V17.5Z"></path>
+                      </svg><span>1ba</span></a><a class="card__link" href=""> <span class="card__link_icon">756</span><span>sqft</span></a></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body">
+                  <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                  <p class="card__price text-primary">$5,630,000</p>
+                  <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                </div>
+                <div class="card-footer">
+                  <div> <a class="card__link" href=""> 
+                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <defs>
+                          <style></style>
+                        </defs>
+                        <path class="cls-1" id="icon" d="M17.5,8.812V1.875A1.875,1.875,0,0,0,15.625,0H4.375A1.875,1.875,0,0,0,2.5,1.875V8.812A3.131,3.131,0,0,0,0,11.875V20H1.25V17.5h17.5V20H20V11.875A3.131,3.131,0,0,0,17.5,8.812ZM3.75,1.875A0.625,0.625,0,0,1,4.375,1.25h11.25a0.625,0.625,0,0,1,.625.625V8.75h-2.5V6.875A1.875,1.875,0,0,0,11.875,5H8.125A1.875,1.875,0,0,0,6.25,6.875V8.75H3.75V1.875Zm8.75,5V8.75h-5V6.875A0.625,0.625,0,0,1,8.125,6.25h3.75A0.625,0.625,0,0,1,12.5,6.875Zm6.25,9.375H1.25V15h17.5v1.25Zm0-2.5H1.25V11.875A1.875,1.875,0,0,1,3.125,10h13.75a1.875,1.875,0,0,1,1.875,1.875V13.75ZM5,2.5H6.25V3.75H5V2.5Zm2.5,0H8.75V3.75H7.5V2.5Zm3.75,0H12.5V3.75H11.25V2.5Zm2.5,0H15V3.75H13.75V2.5Z"></path>
+                      </svg><span>2bd</span></a><a class="card__link" href=""> 
+                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
+                        <path class="cls-1" id="icon" fill="#000" d="M16.714,10V8.6L14.54,4.375H12.214V3.125A3.175,3.175,0,0,0,9,0H3.214A3.175,3.175,0,0,0,0,3.125V20H1.286V3.125A1.9,1.9,0,0,1,3.214,1.25H9a1.9,1.9,0,0,1,1.929,1.875v1.25H8.6L6.429,8.6V10H5.143v1.25H18V10H16.714Zm-1.286,0H7.714V8.9L9.4,5.625h4.348L15.429,8.9V10ZM7.714,12.5H9v1.25H7.714V12.5Zm0,2.5H9v2.5H7.714V15Zm0,3.75H9V20H7.714V18.75Zm3.214-6.25h1.286v5H10.929v-5Zm0,6.25h1.286V20H10.929V18.75Zm3.214-6.25h1.286v1.25H14.143V12.5Zm0,2.5h1.286v1.25H14.143V15Zm0,2.5h1.286V20H14.143V17.5Z"></path>
+                      </svg><span>1ba</span></a><a class="card__link" href=""> <span class="card__link_icon">756</span><span>sqft</span></a></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body">
+                  <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                  <p class="card__price text-primary">$5,630,000</p>
                   <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
                 </div>
                 <div class="card-footer">
@@ -264,377 +358,275 @@
                 </div>
               </div>
             </div>
-            <div class="listing__card_item">
-              <div class="card">
-                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card-img-2.png" alt="..."></div>
-                <div class="card__body">
+            <div class="text-center">
+              <button class="btn btn-primary" type="button">load more</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section__agencies">
+        <div class="container"> 
+          <div class="section__header text-center">
+            <h2 class="section__header_title">Search Property</h2>
+            <p class="section__header_description col-md-6 offset-md-3">Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.</p>
+          </div>
+          <div class="agencies__card_list"> 
+            <div class="agencies__card_item">
+              <div class="card h-100">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body text-center">
                   <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                  <p class="card__price">$5,630,000</p>
-                  <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                  <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
                 </div>
-                <div class="card-footer">
-                  <div> <a class="card__link" href=""> 
-                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <defs>
-                          <style></style>
-                        </defs>
-                        <path class="cls-1" id="icon" d="M17.5,8.812V1.875A1.875,1.875,0,0,0,15.625,0H4.375A1.875,1.875,0,0,0,2.5,1.875V8.812A3.131,3.131,0,0,0,0,11.875V20H1.25V17.5h17.5V20H20V11.875A3.131,3.131,0,0,0,17.5,8.812ZM3.75,1.875A0.625,0.625,0,0,1,4.375,1.25h11.25a0.625,0.625,0,0,1,.625.625V8.75h-2.5V6.875A1.875,1.875,0,0,0,11.875,5H8.125A1.875,1.875,0,0,0,6.25,6.875V8.75H3.75V1.875Zm8.75,5V8.75h-5V6.875A0.625,0.625,0,0,1,8.125,6.25h3.75A0.625,0.625,0,0,1,12.5,6.875Zm6.25,9.375H1.25V15h17.5v1.25Zm0-2.5H1.25V11.875A1.875,1.875,0,0,1,3.125,10h13.75a1.875,1.875,0,0,1,1.875,1.875V13.75ZM5,2.5H6.25V3.75H5V2.5Zm2.5,0H8.75V3.75H7.5V2.5Zm3.75,0H12.5V3.75H11.25V2.5Zm2.5,0H15V3.75H13.75V2.5Z"></path>
-                      </svg><span>2bd</span></a><a class="card__link" href=""> 
-                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
-                        <path class="cls-1" id="icon" fill="#000" d="M16.714,10V8.6L14.54,4.375H12.214V3.125A3.175,3.175,0,0,0,9,0H3.214A3.175,3.175,0,0,0,0,3.125V20H1.286V3.125A1.9,1.9,0,0,1,3.214,1.25H9a1.9,1.9,0,0,1,1.929,1.875v1.25H8.6L6.429,8.6V10H5.143v1.25H18V10H16.714Zm-1.286,0H7.714V8.9L9.4,5.625h4.348L15.429,8.9V10ZM7.714,12.5H9v1.25H7.714V12.5Zm0,2.5H9v2.5H7.714V15Zm0,3.75H9V20H7.714V18.75Zm3.214-6.25h1.286v5H10.929v-5Zm0,6.25h1.286V20H10.929V18.75Zm3.214-6.25h1.286v1.25H14.143V12.5Zm0,2.5h1.286v1.25H14.143V15Zm0,2.5h1.286V20H14.143V17.5Z"></path>
-                      </svg><span>1ba</span></a><a class="card__link" href=""> <span class="card__link_icon">756</span><span>sqft</span></a></div>
+                <div class="d-flex justify-content-center align-items-end">
+                  <button class="btn btn-primary mb-3" type="button">view profile</button>
                 </div>
               </div>
             </div>
-            <div class="listing__card_item">
-              <div class="card">
-                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card-img-3.png" alt="..."></div>
-                <div class="card__body">
+            <div class="agencies__card_item">
+              <div class="card h-100">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body text-center">
                   <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                  <p class="card__price">$5,630,000</p>
-                  <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                  <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
                 </div>
-                <div class="card-footer">
-                  <div> <a class="card__link" href=""> 
-                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <defs>
-                          <style></style>
-                        </defs>
-                        <path class="cls-1" id="icon" d="M17.5,8.812V1.875A1.875,1.875,0,0,0,15.625,0H4.375A1.875,1.875,0,0,0,2.5,1.875V8.812A3.131,3.131,0,0,0,0,11.875V20H1.25V17.5h17.5V20H20V11.875A3.131,3.131,0,0,0,17.5,8.812ZM3.75,1.875A0.625,0.625,0,0,1,4.375,1.25h11.25a0.625,0.625,0,0,1,.625.625V8.75h-2.5V6.875A1.875,1.875,0,0,0,11.875,5H8.125A1.875,1.875,0,0,0,6.25,6.875V8.75H3.75V1.875Zm8.75,5V8.75h-5V6.875A0.625,0.625,0,0,1,8.125,6.25h3.75A0.625,0.625,0,0,1,12.5,6.875Zm6.25,9.375H1.25V15h17.5v1.25Zm0-2.5H1.25V11.875A1.875,1.875,0,0,1,3.125,10h13.75a1.875,1.875,0,0,1,1.875,1.875V13.75ZM5,2.5H6.25V3.75H5V2.5Zm2.5,0H8.75V3.75H7.5V2.5Zm3.75,0H12.5V3.75H11.25V2.5Zm2.5,0H15V3.75H13.75V2.5Z"></path>
-                      </svg><span>2bd</span></a><a class="card__link" href=""> 
-                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
-                        <path class="cls-1" id="icon" fill="#000" d="M16.714,10V8.6L14.54,4.375H12.214V3.125A3.175,3.175,0,0,0,9,0H3.214A3.175,3.175,0,0,0,0,3.125V20H1.286V3.125A1.9,1.9,0,0,1,3.214,1.25H9a1.9,1.9,0,0,1,1.929,1.875v1.25H8.6L6.429,8.6V10H5.143v1.25H18V10H16.714Zm-1.286,0H7.714V8.9L9.4,5.625h4.348L15.429,8.9V10ZM7.714,12.5H9v1.25H7.714V12.5Zm0,2.5H9v2.5H7.714V15Zm0,3.75H9V20H7.714V18.75Zm3.214-6.25h1.286v5H10.929v-5Zm0,6.25h1.286V20H10.929V18.75Zm3.214-6.25h1.286v1.25H14.143V12.5Zm0,2.5h1.286v1.25H14.143V15Zm0,2.5h1.286V20H14.143V17.5Z"></path>
-                      </svg><span>1ba</span></a><a class="card__link" href=""> <span class="card__link_icon">756</span><span>sqft</span></a></div>
+                <div class="d-flex justify-content-center align-items-end">
+                  <button class="btn btn-primary mb-3" type="button">view profile</button>
                 </div>
               </div>
             </div>
-            <div class="listing__card_item">
-              <div class="card">
-                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card-img-4.png" alt="..."></div>
-                <div class="card__body">
+            <div class="agencies__card_item">
+              <div class="card h-100">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body text-center">
                   <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                  <p class="card__price">$5,630,000</p>
-                  <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                  <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
                 </div>
-                <div class="card-footer">
-                  <div> <a class="card__link" href=""> 
-                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <defs>
-                          <style></style>
-                        </defs>
-                        <path class="cls-1" id="icon" d="M17.5,8.812V1.875A1.875,1.875,0,0,0,15.625,0H4.375A1.875,1.875,0,0,0,2.5,1.875V8.812A3.131,3.131,0,0,0,0,11.875V20H1.25V17.5h17.5V20H20V11.875A3.131,3.131,0,0,0,17.5,8.812ZM3.75,1.875A0.625,0.625,0,0,1,4.375,1.25h11.25a0.625,0.625,0,0,1,.625.625V8.75h-2.5V6.875A1.875,1.875,0,0,0,11.875,5H8.125A1.875,1.875,0,0,0,6.25,6.875V8.75H3.75V1.875Zm8.75,5V8.75h-5V6.875A0.625,0.625,0,0,1,8.125,6.25h3.75A0.625,0.625,0,0,1,12.5,6.875Zm6.25,9.375H1.25V15h17.5v1.25Zm0-2.5H1.25V11.875A1.875,1.875,0,0,1,3.125,10h13.75a1.875,1.875,0,0,1,1.875,1.875V13.75ZM5,2.5H6.25V3.75H5V2.5Zm2.5,0H8.75V3.75H7.5V2.5Zm3.75,0H12.5V3.75H11.25V2.5Zm2.5,0H15V3.75H13.75V2.5Z"></path>
-                      </svg><span>2bd</span></a><a class="card__link" href=""> 
-                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
-                        <path class="cls-1" id="icon" fill="#000" d="M16.714,10V8.6L14.54,4.375H12.214V3.125A3.175,3.175,0,0,0,9,0H3.214A3.175,3.175,0,0,0,0,3.125V20H1.286V3.125A1.9,1.9,0,0,1,3.214,1.25H9a1.9,1.9,0,0,1,1.929,1.875v1.25H8.6L6.429,8.6V10H5.143v1.25H18V10H16.714Zm-1.286,0H7.714V8.9L9.4,5.625h4.348L15.429,8.9V10ZM7.714,12.5H9v1.25H7.714V12.5Zm0,2.5H9v2.5H7.714V15Zm0,3.75H9V20H7.714V18.75Zm3.214-6.25h1.286v5H10.929v-5Zm0,6.25h1.286V20H10.929V18.75Zm3.214-6.25h1.286v1.25H14.143V12.5Zm0,2.5h1.286v1.25H14.143V15Zm0,2.5h1.286V20H14.143V17.5Z"></path>
-                      </svg><span>1ba</span></a><a class="card__link" href=""> <span class="card__link_icon">756</span><span>sqft</span></a></div>
+                <div class="d-flex justify-content-center align-items-end">
+                  <button class="btn btn-primary mb-3" type="button">view profile</button>
                 </div>
               </div>
             </div>
-            <div class="listing__card_item">
-              <div class="card">
-                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card-img-5.png" alt="..."></div>
-                <div class="card__body">
+            <div class="agencies__card_item">
+              <div class="card h-100">
+                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                <div class="card__body text-center">
                   <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                  <p class="card__price">$5,630,000</p>
-                  <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+                  <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
                 </div>
-                <div class="card-footer">
-                  <div> <a class="card__link" href=""> 
-                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <defs>
-                          <style></style>
-                        </defs>
-                        <path class="cls-1" id="icon" d="M17.5,8.812V1.875A1.875,1.875,0,0,0,15.625,0H4.375A1.875,1.875,0,0,0,2.5,1.875V8.812A3.131,3.131,0,0,0,0,11.875V20H1.25V17.5h17.5V20H20V11.875A3.131,3.131,0,0,0,17.5,8.812ZM3.75,1.875A0.625,0.625,0,0,1,4.375,1.25h11.25a0.625,0.625,0,0,1,.625.625V8.75h-2.5V6.875A1.875,1.875,0,0,0,11.875,5H8.125A1.875,1.875,0,0,0,6.25,6.875V8.75H3.75V1.875Zm8.75,5V8.75h-5V6.875A0.625,0.625,0,0,1,8.125,6.25h3.75A0.625,0.625,0,0,1,12.5,6.875Zm6.25,9.375H1.25V15h17.5v1.25Zm0-2.5H1.25V11.875A1.875,1.875,0,0,1,3.125,10h13.75a1.875,1.875,0,0,1,1.875,1.875V13.75ZM5,2.5H6.25V3.75H5V2.5Zm2.5,0H8.75V3.75H7.5V2.5Zm3.75,0H12.5V3.75H11.25V2.5Zm2.5,0H15V3.75H13.75V2.5Z"></path>
-                      </svg><span>2bd</span></a><a class="card__link" href=""> 
-                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
-                        <path class="cls-1" id="icon" fill="#000" d="M16.714,10V8.6L14.54,4.375H12.214V3.125A3.175,3.175,0,0,0,9,0H3.214A3.175,3.175,0,0,0,0,3.125V20H1.286V3.125A1.9,1.9,0,0,1,3.214,1.25H9a1.9,1.9,0,0,1,1.929,1.875v1.25H8.6L6.429,8.6V10H5.143v1.25H18V10H16.714Zm-1.286,0H7.714V8.9L9.4,5.625h4.348L15.429,8.9V10ZM7.714,12.5H9v1.25H7.714V12.5Zm0,2.5H9v2.5H7.714V15Zm0,3.75H9V20H7.714V18.75Zm3.214-6.25h1.286v5H10.929v-5Zm0,6.25h1.286V20H10.929V18.75Zm3.214-6.25h1.286v1.25H14.143V12.5Zm0,2.5h1.286v1.25H14.143V15Zm0,2.5h1.286V20H14.143V17.5Z"></path>
-                      </svg><span>1ba</span></a><a class="card__link" href=""> <span class="card__link_icon">756</span><span>sqft</span></a></div>
+                <div class="d-flex justify-content-center align-items-end">
+                  <button class="btn btn-primary mb-3" type="button">view profile</button>
                 </div>
               </div>
             </div>
-            <div class="listing__card_item">
-              <div class="card">
-                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card-img-6.png" alt="..."></div>
-                <div class="card__body">
-                  <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                  <p class="card__price">$5,630,000</p>
-                  <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+          </div>
+        </div>
+      </section>
+      <div class="review__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review__slide text-center">
+              <div class="col-6 mx-auto">
+                <p class="review__slide_quotes">“</p>
+                <p class="review__slide_text">Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.</p>
+                <p class="review__slide_user">michael hopkins</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review__slide text-center">
+              <div class="col-6 mx-auto">
+                <p class="review__slide_quotes">“</p>
+                <p class="review__slide_text">Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.</p>
+                <p class="review__slide_user">michael hopkins</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review__slide text-center">
+              <div class="col-6 mx-auto">
+                <p class="review__slide_quotes">“</p>
+                <p class="review__slide_text">Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.</p>
+                <p class="review__slide_user">michael hopkins</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
+            <defs>
+              <style></style>
+            </defs>
+            <path class="cls-1" id="_2_hover_100_" fill="#fff" data-name="2 hover 100%" d="M7.621,15.261a0.821,0.821,0,0,0,1.158-.034A0.8,0.8,0,0,0,8.746,14.1L2.707,8.495l19.372-.56a0.8,0.8,0,0,0,.787-0.822,0.809,0.809,0,0,0-.834-0.785L2.66,6.888l5.7-5.934A0.808,0.808,0,0,0,8.329-.185a0.821,0.821,0,0,0-1.158.033L0.119,7.2A0.776,0.776,0,0,0,.152,8.328Z"></path>
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
+            <defs>
+              <style></style>
+            </defs>
+            <path class="cls-1" id="_2_hover_100_" fill="#fff" data-name="2 hover 100%" d="M15.5,0.24a0.82,0.82,0,0,0-1.16,0,0.8,0.8,0,0,0,0,1.134l5.882,5.81H0.812a0.8,0.8,0,0,0-.812.8A0.812,0.812,0,0,0,.812,8.8H20.221l-5.882,5.8a0.815,0.815,0,1,0,1.16,1.146L22.774,8.56a0.782,0.782,0,0,0,0-1.134Z"></path>
+          </svg>
+        </div>
+      </div>
+      <section class="section section__news"> 
+        <div class="container">
+          <div class="section__header text-center">
+            <h2 class="section__header_title">Latest News</h2>
+          </div>
+          <div class="news__card_list">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="news__card_item col">
+                <div class="card">
+                  <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                  <div class="card__body">
+                    <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
+                    <p class="card__price text-primary">interiors / 12.04.2018</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
+                  </div>
                 </div>
-                <div class="card-footer">
-                  <div> <a class="card__link" href=""> 
-                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <defs>
-                          <style></style>
-                        </defs>
-                        <path class="cls-1" id="icon" d="M17.5,8.812V1.875A1.875,1.875,0,0,0,15.625,0H4.375A1.875,1.875,0,0,0,2.5,1.875V8.812A3.131,3.131,0,0,0,0,11.875V20H1.25V17.5h17.5V20H20V11.875A3.131,3.131,0,0,0,17.5,8.812ZM3.75,1.875A0.625,0.625,0,0,1,4.375,1.25h11.25a0.625,0.625,0,0,1,.625.625V8.75h-2.5V6.875A1.875,1.875,0,0,0,11.875,5H8.125A1.875,1.875,0,0,0,6.25,6.875V8.75H3.75V1.875Zm8.75,5V8.75h-5V6.875A0.625,0.625,0,0,1,8.125,6.25h3.75A0.625,0.625,0,0,1,12.5,6.875Zm6.25,9.375H1.25V15h17.5v1.25Zm0-2.5H1.25V11.875A1.875,1.875,0,0,1,3.125,10h13.75a1.875,1.875,0,0,1,1.875,1.875V13.75ZM5,2.5H6.25V3.75H5V2.5Zm2.5,0H8.75V3.75H7.5V2.5Zm3.75,0H12.5V3.75H11.25V2.5Zm2.5,0H15V3.75H13.75V2.5Z"></path>
-                      </svg><span>2bd</span></a><a class="card__link" href=""> 
-                      <svg class="card__link_icon" xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20">
-                        <path class="cls-1" id="icon" fill="#000" d="M16.714,10V8.6L14.54,4.375H12.214V3.125A3.175,3.175,0,0,0,9,0H3.214A3.175,3.175,0,0,0,0,3.125V20H1.286V3.125A1.9,1.9,0,0,1,3.214,1.25H9a1.9,1.9,0,0,1,1.929,1.875v1.25H8.6L6.429,8.6V10H5.143v1.25H18V10H16.714Zm-1.286,0H7.714V8.9L9.4,5.625h4.348L15.429,8.9V10ZM7.714,12.5H9v1.25H7.714V12.5Zm0,2.5H9v2.5H7.714V15Zm0,3.75H9V20H7.714V18.75Zm3.214-6.25h1.286v5H10.929v-5Zm0,6.25h1.286V20H10.929V18.75Zm3.214-6.25h1.286v1.25H14.143V12.5Zm0,2.5h1.286v1.25H14.143V15Zm0,2.5h1.286V20H14.143V17.5Z"></path>
-                      </svg><span>1ba</span></a><a class="card__link" href=""> <span class="card__link_icon">756</span><span>sqft</span></a></div>
+              </div>
+              <div class="news__card_item col">
+                <div class="card">
+                  <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                  <div class="card__body">
+                    <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
+                    <p class="card__price text-primary">interiors / 12.04.2018</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="news__card_item col">
+                <div class="card">
+                  <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+                  <div class="card__body">
+                    <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
+                    <p class="card__price text-primary">interiors / 12.04.2018</p>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="text-center">
-            <button class="btn btn-success" type="button">load more</button>
+            <button class="btn btn-primary" type="button">view detail</button>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section section__agencies">
-      <div class="container"> 
-        <div class="section__header text-center">
-          <h2 class="section__header_title">Search Property</h2>
-          <p class="section__header_description col-6 offset-3">Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.</p>
+      </section>
+      <section class="section section__about"> 
+        <div class="container"> 
+          <div class="col-6 my-auto">
+            <div class="section__header section__header_mb-none">
+              <h2 class="section__header_title">About Us</h2>
+              <p class="section__header_description">Nam a dui erat. Sed bibendum augue et porta consequat. Morbi id mattis sem. Phasellus quis magna ipsum. Donec malesuada nisi felis, vel vestibulum nisl volutpat faucibus. Suspendisse volutpat feugiat hendrerit. Donec ullamcorper ex sed gravida efficitur. Etiam tincidunt dui arcu, id varius dolor pulvinar vel.</p>
+              <button class="btn btn-primary" type="button">purchase theme</button>
+            </div>
+          </div>
         </div>
-        <div class="agencies__card_list"> 
-          <div class="agencies__card_item">
-            <div class="card">
-              <div class="card__img"><img class="card-img-top" src="../img/card/card-agencies/img-icon/img-icon-1.svg" alt="..."></div>
-              <div class="card__body text-center">
-                <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
-                <button class="btn btn-success" type="button">view detail</button>
+      </section>
+      <section class="section section__contact"> 
+        <div class="container"> 
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col my-auto contact__content mb-4 mb-md-0">
+              <p>If you have any questions – please contact us via the contact form.</p>
+            </div>
+            <div class="col text-center text-md-end my-auto">
+              <button class="btn btn-outline-light">Contact us</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer"> 
+        <div class="container-md">
+          <div class="footer__wrapper">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="col-lg-7">
+                  <div class="footer__logo"><a href="">Real Estate</a></div>
+                  <div> 
+                    <p class="footer__description">Nam a dui erat. Sed bibendum augue et porta consequat. Morbi id mattis sem. Phasellus quis magna ipsum. Donec malesuada nisi felis, vel vestibulum nisl volutpat faucibus.</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="agencies__card_item">
-            <div class="card">
-              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
-              <div class="card__body text-center">
-                <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
-                <button class="btn btn-success" type="button">view detail</button>
-              </div>
-            </div>
-          </div>
-          <div class="agencies__card_item">
-            <div class="card">
-              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
-              <div class="card__body text-center">
-                <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
-                <button class="btn btn-success" type="button">view detail</button>
-              </div>
-            </div>
-          </div>
-          <div class="agencies__card_item">
-            <div class="card">
-              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
-              <div class="card__body text-center">
-                <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
-                <button class="btn btn-success" type="button">view detail</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="swiper review__swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="review__slide text-center">
-            <div class="col-6 mx-auto">
-              <p class="review__slide_quotes">“</p>
-              <p class="review__slide_text">Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.</p>
-              <p class="review__slide_user">michael hopkins</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="review__slide text-center">
-            <div class="col-6 mx-auto">
-              <p class="review__slide_quotes">“</p>
-              <p class="review__slide_text">Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.</p>
-              <p class="review__slide_user">michael hopkins</p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="review__slide text-center">
-            <div class="col-6 mx-auto">
-              <p class="review__slide_quotes">“</p>
-              <p class="review__slide_text">Praesent scelerisque sollicitudin eros, sollicitudin urna hendrerit.Sed rutrum sem odio, et egestas elit ullamcorper id. In consectetur cursus leo id suscipit.</p>
-              <p class="review__slide_user">michael hopkins</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev">
-        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
-          <defs>
-            <style></style>
-          </defs>
-          <path class="cls-1" id="_2_hover_100_" fill="#fff" data-name="2 hover 100%" d="M7.621,15.261a0.821,0.821,0,0,0,1.158-.034A0.8,0.8,0,0,0,8.746,14.1L2.707,8.495l19.372-.56a0.8,0.8,0,0,0,.787-0.822,0.809,0.809,0,0,0-.834-0.785L2.66,6.888l5.7-5.934A0.808,0.808,0,0,0,8.329-.185a0.821,0.821,0,0,0-1.158.033L0.119,7.2A0.776,0.776,0,0,0,.152,8.328Z"></path>
-        </svg>
-      </div>
-      <div class="swiper-button-next">
-        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="16" viewBox="0 0 23 16">
-          <defs>
-            <style></style>
-          </defs>
-          <path class="cls-1" id="_2_hover_100_" fill="#fff" data-name="2 hover 100%" d="M15.5,0.24a0.82,0.82,0,0,0-1.16,0,0.8,0.8,0,0,0,0,1.134l5.882,5.81H0.812a0.8,0.8,0,0,0-.812.8A0.812,0.812,0,0,0,.812,8.8H20.221l-5.882,5.8a0.815,0.815,0,1,0,1.16,1.146L22.774,8.56a0.782,0.782,0,0,0,0-1.134Z"></path>
-        </svg>
-      </div>
-    </div>
-    <section class="section section__news"> 
-      <div class="container">
-        <div class="section__header text-center">
-          <h2 class="section__header_title">Latest News</h2>
-        </div>
-        <div class="news__card_list">
-          <div class="row row-cols-3">
-            <div class="news__card_item col">
-              <div class="card">
-                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
-                <div class="card__body">
-                  <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
-                  <p class="card__price">interiors / 12.04.2018</p>
-                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
+              <div class="col-lg-6 mb-4">
+                <div class="row row-cols-1 row-cols-md-2">
+                  <div class="footer__nav col mb-4">
+                    <h5 class="footer__nav_title">Quick Links</h5>
+                    <ul class="footer__nav_list row row-cols-2"> 
+                      <li class="footer__nav_item"> <a href="./index.html"> Home</a></li>
+                      <li class="footer__nav_item"> <a href="./news.html">News</a></li>
+                      <li class="footer__nav_item"> <a href="./agencies.html">Agencies</a></li>
+                      <li class="footer__nav_item"> <a href="./contact-us.html">Contact Us</a></li>
+                      <li class="footer__nav_item"> <a href="./properties.html">Property</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__contact col">
+                    <h5 class="footer__contact_title">Contact Us</h5>
+                    <ul class="footer__contact_list"> 
+                      <li class="footer__contact_item"> <a href="">hello@realestate.com</a></li>
+                      <li class="footer__contact_item">+44 987 065 908</li>
+                      <li class="footer__contact_item">+44 987 062 909</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="news__card_item col">
-              <div class="card">
-                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
-                <div class="card__body">
-                  <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
-                  <p class="card__price">interiors / 12.04.2018</p>
-                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
-                </div>
-              </div>
-            </div>
-            <div class="news__card_item col">
-              <div class="card">
-                <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
-                <div class="card__body">
-                  <h5 class="card__title">Nullam vestibulum leo et ante, vel feugiat mauris accumsan.</h5>
-                  <p class="card__price">interiors / 12.04.2018</p>
-                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <button class="btn btn-success" type="button">view detail</button>
-        </div>
-      </div>
-    </section>
-    <section class="section section__about"> 
-      <div class="container"> 
-        <div class="col-6 my-auto">
-          <div class="section__header section__header_mb-none">
-            <h2 class="section__header_title">About Us</h2>
-            <p class="section__header_description">Nam a dui erat. Sed bibendum augue et porta consequat. Morbi id mattis sem. Phasellus quis magna ipsum. Donec malesuada nisi felis, vel vestibulum nisl volutpat faucibus. Suspendisse volutpat feugiat hendrerit. Donec ullamcorper ex sed gravida efficitur. Etiam tincidunt dui arcu, id varius dolor pulvinar vel.</p>
-            <button class="btn btn-success" type="button">purchase theme</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section section__contact"> 
-      <div class="container"> 
-        <div class="row">
-          <div class="col-6 my-auto contact__content">
-            <p>If you have any questions – please contact us via the contact form.</p>
-          </div>
-          <div class="col-6 text-end my-auto">
-            <button class="btn btn-outline-light">Contact us</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer"> 
-      <div class="container">
-        <div class="footer__wrapper">
-          <div class="row">
-            <div class="col-6">
-              <div class="col-7">
-                <div class="footer__logo"><a href="">Real Estate</a></div>
-                <div> 
-                  <p class="footer__description">Nam a dui erat. Sed bibendum augue et porta consequat. Morbi id mattis sem. Phasellus quis magna ipsum. Donec malesuada nisi felis, vel vestibulum nisl volutpat faucibus.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="row">
-                <div class="footer__nav col-6">
-                  <h5 class="footer__nav_title">Quick Links</h5>
-                  <ul class="footer__nav_list row row-cols-2"> 
-                    <li class="footer__nav_item"> <a href="./index.html"> Home</a></li>
-                    <li class="footer__nav_item"> <a href="">News</a></li>
-                    <li class="footer__nav_item"> <a href="">Agencies</a></li>
-                    <li class="footer__nav_item"> <a href="">Contact Us</a></li>
-                    <li class="footer__nav_item"> <a href="./properties.html">Property</a></li>
-                  </ul>
-                </div>
-                <div class="footer__contact col-6">
-                  <h5 class="footer__contact_title">Contact Us</h5>
-                  <ul class="footer__contact_list"> 
-                    <li class="footer__contact_item"> <a href="">hello@realestate.com</a></li>
-                    <li class="footer__contact_item">+44 987 065 908</li>
-                    <li class="footer__contact_item">+44 987 062 909</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer__link_wrapper"><a class="footer__link_item" href="https://www.facebook.com/">
-               <svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 9 18">
+            <div class="footer__link_wrapper"><a class="footer__link_item" href="https://www.facebook.com/">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 9 18">
 <defs>
 <style>
 </style>
 </defs>
 <path id="facebook" fill='#fff' class="cls-1" d="M7,3.418H9.426V0H6.574V0.011c-3.455.117-4.165,1.97-4.227,3.918H2.34V5.635H-0.013v3.35H2.34v8.977H5.888V8.986H8.793l0.56-3.35H5.888V4.6A1.124,1.124,0,0,1,7,3.418Z"/>
 </svg></a><a class="footer__link_item" href="https://twitter.com/">
-               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15">
 <defs>
 <style>
 </style>
 </defs>
 <path id="twitter" fill='#fff'; class="cls-1" d="M18.381,1.911a7.075,7.075,0,0,1-2.156.583A3.97,3.97,0,0,0,17.844.481a6.5,6.5,0,0,1-2.424.819h0A3.966,3.966,0,0,0,12.613.156,3.8,3.8,0,0,0,8.729,3.863a3.493,3.493,0,0,0,.1.825h0A11.412,11.412,0,0,1,.6.844a3.608,3.608,0,0,0,1.178,4.9,2.582,2.582,0,0,1-1.7-.417,3.6,3.6,0,0,0,3,3.62,3.187,3.187,0,0,1-1.617.117c0.124,1.091,1.724,2.517,3.472,2.517a6.556,6.556,0,0,1-5.38,1.537,12.073,12.073,0,0,0,6.076,1.64c6.267,0,11.134-4.846,10.872-10.823,0-.007,0-0.014,0-0.02s0-.034,0-0.047,0-.037,0-0.056A6.528,6.528,0,0,0,18.381,1.911Z"/>
 </svg></a><a class="footer__link_item" href="https://plus.google.com/">
-               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18">
 <defs>
 <style>
 </style>
 </defs>
 <path id="google_plus" fill='#fff'; data-name="google plus" class="cls-1" d="M9.575,10.388c-1.922-1.3-2.64-1.922-1.409-2.957s2.2-1.873,2.2-3.8A3.6,3.6,0,0,0,8.7.729,3.8,3.8,0,0,0,10.548.554,6.728,6.728,0,0,0,11.47-.011H5.346C4.117-.011.71,1.319,0.71,4.423S4.245,8.2,5.527,8.147a1.378,1.378,0,0,0,.282,1.995c0.385,0.394.307,0.517-.153,0.517s-6.151.059-6.151,3.946S7.064,18.77,9.55,16.676,11.5,11.694,9.575,10.388ZM5.936,7.381c-3.05,0-4.434-6.8-.846-6.8C7.883,0.481,9.984,7.381,5.936,7.381ZM5.574,16.9c-2.534,0-3.893-1.207-3.893-3.007S3.528,11.2,6.987,11.2C7.924,11.891,9.6,12.729,9.6,14.407S8.107,16.9,5.574,16.9ZM14.865,0.034V2.245H17.17V3.392H14.865V5.608h-1.2V3.392H11.323V2.245h2.345V0.034h1.2Z"/>
 </svg></a><a class="footer__link_item" href="https://www.behance.net/">
-               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12">
 <defs>
 <style>
 </style>
 </defs>
 <path id="behance" fill='#fff'; class="cls-1" d="M-0.147.282H5.989c2.484,0,4.163.825,4.163,3.087A2.663,2.663,0,0,1,8.381,5.9a3,3,0,0,1,2.393,3.078c0,2.466-2.246,3.522-4.6,3.522H-0.147V0.282ZM2.474,5.275H5.624A1.473,1.473,0,0,0,7.377,3.829c0-1.156-.951-1.4-1.973-1.4H2.474V5.275Zm0,5.153H5.788c1.133,0,2.118-.339,2.118-1.6,0-1.241-.839-1.735-2.063-1.735H2.474v3.334ZM14.211,8.807c0.073,1.53.876,2,2.318,2,1.042,0,1.882-.175,2.046-0.72h2.282c-0.73,2.076-2.282,2.54-4.419,2.54A4.449,4.449,0,0,1,11.619,8a4.568,4.568,0,0,1,4.82-4.643c3.214,0,4.766,2.746,4.584,5.45H14.211Zm4.218-1.3c-0.237-1.224-.8-2.329-2.064-2.329a2.321,2.321,0,0,0-2.154,2.329h4.218Zm1.08-4.795H12.986V1.475H19.51V2.712Z"/>
 </svg></a><a class="footer__link_item" href="https://www.pinterest.ru/">
-               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
 <defs>
 <style>
 </style>
 </defs>
 <path id="pinterest" fill='#fff' class="cls-1" d="M9.09,0.021A9.206,9.206,0,0,0-.325,9a8.987,8.987,0,0,0,5.688,8.251,7.564,7.564,0,0,1,.166-2.05c0.182-.731,1.216-4.911,1.216-4.911a3.347,3.347,0,0,1-.3-1.428A2.093,2.093,0,0,1,8.264,6.533,1.231,1.231,0,0,1,9.539,7.887a18.688,18.688,0,0,1-.834,3.2A1.416,1.416,0,0,0,10.2,12.822c1.789,0,2.995-2.194,2.995-4.795,0-1.976-1.393-3.454-3.93-3.454A4.379,4.379,0,0,0,4.608,8.891a2.529,2.529,0,0,0,.624,1.769,0.424,0.424,0,0,1,.136.5c-0.046.165-.148,0.565-0.192,0.723a0.328,0.328,0,0,1-.474.225A3.441,3.441,0,0,1,2.767,8.668c0-2.562,2.264-5.633,6.753-5.633,3.609,0,5.982,2.491,5.982,5.165,0,3.537-2.061,6.178-5.1,6.178A2.748,2.748,0,0,1,8.1,13.256s-0.549,2.075-.664,2.477A7.409,7.409,0,0,1,6.5,17.64a9.842,9.842,0,0,0,2.594.345A9.206,9.206,0,0,0,18.5,9,9.206,9.206,0,0,0,9.09.021Z"/>
 </svg></a><a class="footer__link_item" href="https://www.instagram.com/">
-               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18">
 <defs>
 <style>
 </style>
 </defs>
 <path id="instagram" fill='#fff' class="cls-1" d="M17.117,0H2.053A1.848,1.848,0,0,0,.17,1.8V16.2A1.848,1.848,0,0,0,2.053,18H17.117A1.848,1.848,0,0,0,19,16.2V1.8A1.848,1.848,0,0,0,17.117,0ZM9.585,5.4A3.7,3.7,0,0,1,13.351,9a3.7,3.7,0,0,1-3.766,3.6A3.7,3.7,0,0,1,5.819,9,3.7,3.7,0,0,1,9.585,5.4ZM2.524,16.2a0.435,0.435,0,0,1-.471-0.45V8.1H4.03a2.93,2.93,0,0,0-.094.9,5.546,5.546,0,0,0,5.649,5.4A5.546,5.546,0,0,0,15.234,9a2.93,2.93,0,0,0-.094-0.9h1.977v7.65a0.435,0.435,0,0,1-.471.45H2.524ZM17.117,4.049a0.435,0.435,0,0,1-.471.45H14.763a0.435,0.435,0,0,1-.471-0.45v-1.8a0.435,0.435,0,0,1,.471-0.45h1.883a0.435,0.435,0,0,1,.471.45v1.8Z"/>
 </svg></a></div>
+          </div>
         </div>
-      </div>
-      <div class="footer__copyright_wrapper text-center">
-        <p class="footer__copyright">© 2018 . All rights reserved.</p>
-      </div>
-    </footer>
+        <div class="footer__copyright_wrapper text-center">
+          <p class="footer__copyright">© 2018 . All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
   </body>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="/bootstrap/js/bootstrap.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap&amp;libraries=&amp;v=weekly" async></script>
   <script src="/js/script.js"></script>

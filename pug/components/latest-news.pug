@@ -2,61 +2,20 @@ section.section.section__news
   div.container
     div.section__header.text-center
       h2.section__header_title Latest News
+      if newsNavigation
+        .news__navigation.text-center
+          button.news__navigation_item.news__navigation_item_active(href="") all
+          button.news__navigation_item(href="") interiors
+          button.news__navigation_item(href="") agencies
+          button.news__navigation_item(href="") our team
+      else
     .news__card_list
-      if margin
-        div.row.row-cols-3.mb-4
-          div.news__card_item.col
-            div.card
-              div.card__img
-                img(src="../img/card/card_picture/card_img_one.png" class="card-img-top" alt="...")
-              div.card__body
-                h5.card__title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
-                p.card__price interiors / 12.04.2018
-                p.card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
-          div.news__card_item.col
-            div.card
-              div.card__img
-                img(src="../img/card/card_picture/card_img_one.png" class="card-img-top" alt="...")
-              div.card__body
-                h5.card__title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
-                p.card__price interiors / 12.04.2018
-                p.card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
-          div.news__card_item.col
-            div.card
-              div.card__img
-                img(src="../img/card/card_picture/card_img_one.png" class="card-img-top" alt="...")
-              div.card__body
-                h5.card__title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
-                p.card__price interiors / 12.04.2018
-                p.card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
-      else 
-        div.row.row-cols-3
-          div.news__card_item.col
-            div.card
-              div.card__img
-                img(src="../img/card/card_picture/card_img_one.png" class="card-img-top" alt="...")
-              div.card__body
-                h5.card__title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
-                p.card__price interiors / 12.04.2018
-                p.card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
-          div.news__card_item.col
-            div.card
-              div.card__img
-                img(src="../img/card/card_picture/card_img_one.png" class="card-img-top" alt="...")
-              div.card__body
-                h5.card__title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
-                p.card__price interiors / 12.04.2018
-                p.card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
-          div.news__card_item.col
-            div.card
-              div.card__img
-                img(src="../img/card/card_picture/card_img_one.png" class="card-img-top" alt="...")
-              div.card__body
-                h5.card__title Nullam vestibulum leo et ante, vel feugiat mauris accumsan.
-                p.card__price interiors / 12.04.2018
-                p.card__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium magna ac placerat interdum.
+      div.row.row-cols-3
+          include ../components/card-news
+          include ../components/card-news
+          
       if latestNewsCards
-          div.row.row-cols-3
+          div.row.row-cols-3.mt-4
             div.news__card_item.col
               div.card
                 div.card__img

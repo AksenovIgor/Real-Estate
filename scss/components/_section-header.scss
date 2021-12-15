@@ -1,5 +1,8 @@
 .section__header{
   margin-bottom: 70px;
+  @media (max-width: 476px) {
+    margin-bottom: 15px;
+  }
   &_mb-none{
     margin-bottom: 0;
   }
@@ -10,5 +13,9 @@
   }
   &_description{
     margin-bottom: 29px;
+    @media (max-width: 476px) {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
   }
 }

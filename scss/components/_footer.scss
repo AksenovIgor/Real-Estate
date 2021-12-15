@@ -3,6 +3,9 @@
   color: #fff;
   &__wrapper {
     padding: 100px 0 120px;
+    @media (max-width: 767px) {
+      padding: 50px 0 70px;
+    }
   }
   &__logo {
     margin-bottom: 18px;

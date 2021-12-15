@@ -1,0 +1,22 @@
+.container
+  .index-page
+    if properties
+      .index-page__item
+        a.index-page__item_link(href="./index.html") Home
+        p /Properties
+    else if agencies
+      .index-page__item
+        a.index-page__item_link(href="./index.html") Home
+        p /Agencies
+    else if about
+      .index-page__item
+        a.index-page__item_link(href="./index.html") Home
+        p /About
+    else if news
+      .index-page__item
+        a.index-page__item_link(href="./index.html") Home
+        p /News
+    else 
+      .index-page__item
+        a.index-page__item_link(href="./index.html") Home
+        p /Contact Us

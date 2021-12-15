@@ -9,12 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href=" ../main.css">
     <title>Real Estate </title>
   </head>
   <body>
-    <header class="header"> 
+    <header class="header fixed-top">
       <div class="container"> 
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid p-0"><a class="navbar-brand" href="#"><img src="../img/header/logo.png" alt=""></a>
@@ -35,11 +35,17 @@
             </div>
           </div>
         </nav>
-        <div> 
-          <div class="header__before header__before_agencies"></div>
-        </div>
+        <div> </div>
       </div>
     </header>
+    <div class="container">
+      <nav class="breadcrumb_wrapper" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 color-secondary">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">agencies</li>
+        </ol>
+      </nav>
+    </div>
     <section class="section section__filter">
       <div class="container">
         <div class="filter">
@@ -54,9 +60,9 @@
               </select>
             </div>
             <div class="filter__item">
-              <p class="filter__item_title">Purpose</p>
+              <p class="filter__item_title">City</p>
               <select class="filter__item_menu">
-                <option>Any Tipe</option>
+                <option>New York</option>
                 <option>One</option>
                 <option>Two</option>
                 <option>Three</option>
@@ -64,60 +70,115 @@
             </div>
             <div class="filter__item">
               <p class="filter__item_title">Keywords</p>
-              <select class="filter__item_menu">
-                <option>Any Purpose</option>
-                <option>One</option>
-                <option>Two</option>
-                <option>Three</option>
-              </select>
+              <input class="filter__item_menu" type="text" placeholder="Enter keywords...">
             </div>
           </div>
           <div class="text-center">
-            <button class="btn btn-success" type="button">serch properties</button>
+            <button class="btn btn-primary" type="button">serch properties</button>
           </div>
         </div>
       </div>
     </section>
     <section class="section section_blackout section__agencies"> 
       <div class="container"> 
+        <div class="section__header text-center">
+          <h2 class="section__header_title">Search Property</h2>
+          <p class="section__header_description col-6 offset-3">Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.</p>
+        </div>
         <div class="agencies__card_list"> 
           <div class="agencies__card_item">
-            <div class="card">
-              <div class="card__img"><img class="card-img-top" src="../img/card/card-agencies/img-icon/img-icon-1.svg" alt="..."></div>
+            <div class="card h-100">
+              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
               <div class="card__body text-center">
                 <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
-                <button class="btn btn-success" type="button">view detail</button>
+                <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+              </div>
+              <div class="d-flex justify-content-center align-items-end">
+                <button class="btn btn-secondary mb-3" type="button">view profile</button>
               </div>
             </div>
           </div>
           <div class="agencies__card_item">
-            <div class="card">
+            <div class="card h-100">
               <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
               <div class="card__body text-center">
                 <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
-                <button class="btn btn-success" type="button">view detail</button>
+                <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+              </div>
+              <div class="d-flex justify-content-center align-items-end">
+                <button class="btn btn-secondary mb-3" type="button">view profile</button>
               </div>
             </div>
           </div>
           <div class="agencies__card_item">
-            <div class="card">
+            <div class="card h-100">
               <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
               <div class="card__body text-center">
                 <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
-                <button class="btn btn-success" type="button">view detail</button>
+                <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+              </div>
+              <div class="d-flex justify-content-center align-items-end">
+                <button class="btn btn-secondary mb-3" type="button">view profile</button>
               </div>
             </div>
           </div>
           <div class="agencies__card_item">
-            <div class="card">
+            <div class="card h-100">
               <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
               <div class="card__body text-center">
                 <h5 class="card__title">Central Park, Manhattan, NY</h5>
-                <p class="card__description">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
-                <button class="btn btn-success" type="button">view detail</button>
+                <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+              </div>
+              <div class="d-flex justify-content-center align-items-end">
+                <button class="btn btn-secondary mb-3" type="button">view profile</button>
+              </div>
+            </div>
+          </div>
+          <div class="agencies__card_item">
+            <div class="card h-100">
+              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+              <div class="card__body text-center">
+                <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+              </div>
+              <div class="d-flex justify-content-center align-items-end">
+                <button class="btn btn-secondary mb-3" type="button">view profile</button>
+              </div>
+            </div>
+          </div>
+          <div class="agencies__card_item">
+            <div class="card h-100">
+              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+              <div class="card__body text-center">
+                <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+              </div>
+              <div class="d-flex justify-content-center align-items-end">
+                <button class="btn btn-secondary mb-3" type="button">view profile</button>
+              </div>
+            </div>
+          </div>
+          <div class="agencies__card_item">
+            <div class="card h-100">
+              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+              <div class="card__body text-center">
+                <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+              </div>
+              <div class="d-flex justify-content-center align-items-end">
+                <button class="btn btn-secondary mb-3" type="button">view profile</button>
+              </div>
+            </div>
+          </div>
+          <div class="agencies__card_item">
+            <div class="card h-100">
+              <div class="card__img"><img class="card-img-top" src="../img/card/card_picture/card_img_one.png" alt="..."></div>
+              <div class="card__body text-center">
+                <h5 class="card__title">Central Park, Manhattan, NY</h5>
+                <p class="card__description mb-2">Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.</p>
+              </div>
+              <div class="d-flex justify-content-center align-items-end">
+                <button class="btn btn-secondary mb-3" type="button">view profile</button>
               </div>
             </div>
           </div>
@@ -126,41 +187,41 @@
     </section>
     <section class="section section__contact"> 
       <div class="container"> 
-        <div class="row">
-          <div class="col-6 my-auto contact__content">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col my-auto contact__content mb-4 mb-md-0">
             <p>If you have any questions – please contact us via the contact form.</p>
           </div>
-          <div class="col-6 text-end my-auto">
+          <div class="col text-center text-md-end my-auto">
             <button class="btn btn-outline-light">Contact us</button>
           </div>
         </div>
       </div>
     </section>
     <footer class="footer"> 
-      <div class="container">
+      <div class="container-md">
         <div class="footer__wrapper">
           <div class="row">
-            <div class="col-6">
-              <div class="col-7">
+            <div class="col-lg-6">
+              <div class="col-lg-7">
                 <div class="footer__logo"><a href="">Real Estate</a></div>
                 <div> 
                   <p class="footer__description">Nam a dui erat. Sed bibendum augue et porta consequat. Morbi id mattis sem. Phasellus quis magna ipsum. Donec malesuada nisi felis, vel vestibulum nisl volutpat faucibus.</p>
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <div class="row">
-                <div class="footer__nav col-6">
+            <div class="col-lg-6 mb-4">
+              <div class="row row-cols-1 row-cols-md-2">
+                <div class="footer__nav col mb-4">
                   <h5 class="footer__nav_title">Quick Links</h5>
                   <ul class="footer__nav_list row row-cols-2"> 
                     <li class="footer__nav_item"> <a href="./index.html"> Home</a></li>
-                    <li class="footer__nav_item"> <a href="">News</a></li>
-                    <li class="footer__nav_item"> <a href="">Agencies</a></li>
-                    <li class="footer__nav_item"> <a href="">Contact Us</a></li>
+                    <li class="footer__nav_item"> <a href="./news.html">News</a></li>
+                    <li class="footer__nav_item"> <a href="./agencies.html">Agencies</a></li>
+                    <li class="footer__nav_item"> <a href="./contact-us.html">Contact Us</a></li>
                     <li class="footer__nav_item"> <a href="./properties.html">Property</a></li>
                   </ul>
                 </div>
-                <div class="footer__contact col-6">
+                <div class="footer__contact col">
                   <h5 class="footer__contact_title">Contact Us</h5>
                   <ul class="footer__contact_list"> 
                     <li class="footer__contact_item"> <a href="">hello@realestate.com</a></li>
@@ -224,7 +285,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="/bootstrap/js/bootstrap.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap&amp;libraries=&amp;v=weekly" async></script>
   <script src="/js/script.js"></script>

@@ -5,10 +5,7 @@
   &__content{
     color: #FFF;
     display: flex;
-    flex-direction: column; 
-    &_slide{
-      margin: 0 29%;
-    }
+    flex-direction: column;
     &_sale{
       width: 54px;
       font-size: 12px;
@@ -28,14 +25,19 @@
       font-size: 40px;
       font-weight: 700; 
       margin-bottom: 30px;
+      @media (max-width: 476px) {
+        font-size: 28px;
+      }
     }
     &_description{
       margin-bottom: 40px;
     }
   }
   &__swiper {
+    margin-top: 50px;
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
   &__img{
     height: 530px;

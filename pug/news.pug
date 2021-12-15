@@ -1,10 +1,37 @@
 - var margin = true
-- var latestNewsCards = true
+- var newsNavigation = true
+- var news = true
 doctype html
 html(lang="en")
   include ./components/head.pug
   body
     include ./components/header.pug
-    include ./components/latest-news.pug
+    //-index-page
+    .container
+        nav.breadcrumb_wrapper(aria-label="breadcrumb")
+          ol.breadcrumb.mb-0.color-secondary
+            li.breadcrumb-item
+              a(href="./index.html") Home
+            li.breadcrumb-item.active(aria-current="page") News
+    //- section latest news
+    section.section.section__news 
+      .container
+        .section__header.text-center
+          h2.section__header_title Latest News
+          .news__navigation.text-center
+            button.news__navigation_item.news__navigation_item_active(href="") all
+            button.news__navigation_item(href="") interiors
+            button.news__navigation_item(href="") agencies
+            button.news__navigation_item(href="") our team
+        .news__card_list
+          .row.row-cols-3.g-4
+              include ./components/card-news
+              include ./components/card-news
+              include ./components/card-news
+              include ./components/card-news
+              include ./components/card-news
+              include ./components/card-news
+        .text-center
+          button.btn.btn-primary(type="button") view detail
     include ./components/footer.pug
   include ./components/link-js.pug

@@ -7,6 +7,9 @@
       &:hover path{
           fill: rgba(255, 255, 255, 0.589);
       }
+      @media (max-width: 992px) {
+        display: none;
+      }
     } 
     &-prev{
       &:after{
@@ -14,6 +17,9 @@
       }
       &:hover path{
         fill: rgba(255, 255, 255, 0.589);
+      }
+      @media (max-width: 992px) {
+        display: none;
       }
     }
   }

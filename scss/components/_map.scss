@@ -1,0 +1,12 @@
+.map{
+  &_contact-us{
+    height: 600px;
+    margin-bottom: 100px;
+  }
+  &__item{
+    border-radius: 5px;
+    @media (max-width: 992px) {
+      height: 300px;
+    }
+  }
+}

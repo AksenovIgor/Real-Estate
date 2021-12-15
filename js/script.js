@@ -1,23 +1,49 @@
-
-new Swiper('.swiper', {
+new Swiper('.review__swiper', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   // Enable debugger
-  fadeEffect:{
-    crossFade: true
+  effect: "cube",
+  cubeEffect: {
+    shadowOffset: 20,
+    shadowScale: 0,
   },
   simulateTouch: true,
   grabCursor: true,
   loop: true,
-  initialSlide: 0,
 });
+
+
+var swiper3 = new Swiper(".welcome__swiper", {
+  grabCursor: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ["-20%", 0, -1],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+  speed: 1500,
+});
+
+
 
 $(document).ready(function(){
   $('.card__img img').hover(function() {
@@ -104,5 +130,4 @@ inputRight.addEventListener("mousedown", function() {
 inputRight.addEventListener("mouseup", function() {
 	thumbRight.classList.remove("active");
 });
-
 

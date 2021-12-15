@@ -1,39 +1,44 @@
+- var agencies = true;
+- var btnAgenciesSecondary = true;
 doctype html
 html(lang="en")
   include ./components/head.pug
   body
     include ./components/header.pug
-      div.header__before.header__before_agencies
+    //-index-page
+    .container
+      nav.breadcrumb_wrapper(aria-label="breadcrumb")
+        ol.breadcrumb.mb-0.color-secondary
+          li.breadcrumb-item
+            a(href="./index.html") Home
+          li.breadcrumb-item.active(aria-current="page") agencies
+    //- section filter
     section.section.section__filter
       .container
         .filter
           div.filter__wrapper.filter__wrapper_agencies
-            div.filter__item
-              p.filter__item_title City
-              select.filter__item_menu
-                option New York
-                option One
-                option Two
-                option Three
-            div.filter__item
-              p.filter__item_title Purpose
-              select.filter__item_menu
-                option Any Tipe
-                option One
-                option Two
-                option Three
+            include ./components/filter-item
+            include ./components/filter-item
             div.filter__item
               p.filter__item_title Keywords
-              select.filter__item_menu
-                option Any Purpose
-                option One
-                option Two
-                option Three
+              input.filter__item_menu(type='text' placeholder="Enter keywords...")
           div.text-center
-              button.btn.btn-success(type="button") serch properties
+              button.btn.btn-primary(type="button") serch properties
+    //- section agencies
     section.section.section_blackout.section__agencies  
       .container 
-        include ./components/section-agencies.pug
+        .section__header.text-center
+          h2.section__header_title Search Property
+          p.section__header_description.col-6.offset-3 Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.
+        .agencies__card_list 
+          include ./components/card-agencies
+          include ./components/card-agencies
+          include ./components/card-agencies
+          include ./components/card-agencies
+          include ./components/card-agencies
+          include ./components/card-agencies
+          include ./components/card-agencies
+          include ./components/card-agencies
     include ./components/section-contact.pug
     include ./components/footer.pug
   include ./components/link-js.pug

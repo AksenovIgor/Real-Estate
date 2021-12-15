@@ -1,26 +1,20 @@
 .btn{
-  &_active{
-    background-color: #00bd74;
-    color: #fff !important;
-  }
   width: auto;
   line-height: 0;
   border-radius: 3px;
-  -webkit-box-shadow: none !important;
   box-shadow: none !important;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   padding: 24px;
-  &-success{
+  &-primary{
     color: #fff;
-    background-color: #00bd74;
-    border: none;
-    
-  }
-  &-w100{
-    max-width: 100%;
-    width: 100%;
+    &:hover{
+      color: #fff;
+    }
   }
 }
+
+
+$btn-agencies: wiew profile;

@@ -1,0 +1,15 @@
+.contact{
+  &-info{
+    &__content {
+      &_title{
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+      &_description{
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

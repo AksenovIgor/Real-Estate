@@ -1,24 +1,42 @@
+
 doctype html
 html(lang="en")
   include ./components/head.pug
   body
     include ./components/header.pug
-      div.header__before_properties
+    //-index-page
+    .container
+      nav.breadcrumb_wrapper(aria-label="breadcrumb")
+        ol.breadcrumb.mb-0.color-secondary
+          li.breadcrumb-item
+            a(href="./index.html") Home
+          li.breadcrumb-item.active(aria-current="page") Properties
     section.section.section__filter
       .container
         .filter
-          div.filter__wrapper
-            include ./components/filter.pug
-            div.filter__item
+          .filter__wrapper
+            include ./components/filter-item
+            include ./components/filter-item
+            include ./components/filter-item
+            include ./components/filter-item
+            include ./components/filter-item
+            .filter__item
               p.filter__item_title Keywords
               input.filter__item_menu(type='text' placeholder="Enter keywords...")
-                
             include ./components/price-range.pug
-            .property__filter_btn.my-auto
-              button.btn.btn-success(type="button") serch properties
+            .mt-4.my-sm-auto
+              button.btn.btn-primary.w-100(type="button") serch properties
     section.section.section__listing
       .container 
-        include ./components/new-listing.pug
+        .listing__card_list(id="rent")
+          include ./components/card
+          include ./components/card
+          include ./components/card
+          include ./components/card
+          include ./components/card
+          include ./components/card
+        .text-center
+          button.btn.btn-primary(type="button") load more
     include ./components/section-contact.pug
     include ./components/footer.pug
   include ./components/link-js.pug

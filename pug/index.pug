@@ -3,27 +3,49 @@ doctype html
 html(lang="en")
   include ./components/head.pug
   body
-    include ./components/header.pug
-    include ./components/welcome.pug
-    include ./components/property.pug
-    section.section.section__listing
-      .container 
-        div.section__header.text-center
-          h2.section__header_title New Listing
-          .listing__btn.text-center
-            button.btn.btn-outline-success.listing__btn_rent.btn_active(href="#rent") RENT
-            button.btn.btn-outline-success.listing__btn_buy BUY
-        include ./components/new-listing.pug
-    section.section.section__agencies
-      .container 
-        div.section__header.text-center
-          h2.section__header_title Search Property
-          p.section__header_description.col-6.offset-3 Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.
-        include ./components/section-agencies.pug
-    include ./components/review.pug
-    include ./components/latest-news.pug
-    include ./components/section-about 
-    include ./components/section-contact.pug
-    include ./components/footer.pug
+    //- header
+    include ./components/header
+    //- main
+    main
+      include ./components/welcome-sviper
+      include ./sections/section-property
+      include ./sections/section-new-listing
+        .listing__card_list(id="rent")
+          include ./components/card
+          include ./components/card
+          include ./components/card
+          include ./components/card
+          include ./components/card
+          include ./components/card
+        .text-center
+          button.btn.btn-primary(type="button") load more
+      section.section.section__agencies
+        .container 
+          .section__header.text-center
+            h2.section__header_title Search Property
+            p.section__header_description.col-md-6.offset-md-3 Aliquam fermentum erat eu nunc dignissim hendrerit. Praesent tellus, orci imperdiet id accumsan in, cursus eu mauris.
+          .agencies__card_list 
+            include ./components/card-agencies
+            include ./components/card-agencies
+            include ./components/card-agencies
+            include ./components/card-agencies
+      include ./components/review.pug
+      //-section latest news
+      section.section.section__news 
+        .container
+          .section__header.text-center
+            h2.section__header_title Latest News
+          .news__card_list
+            .row.row-cols-1.row-cols-md-3.g-4
+                include ./components/card-news
+                include ./components/card-news
+                include ./components/card-news
+          .text-center
+            button.btn.btn-primary(type="button") view detail
+      //- about us
+      include ./components/section-about 
+      include ./components/section-contact.pug
+      //- footer
+      include ./components/footer.pug
   //- link JavaScript
   include ./components/link-js.pug
